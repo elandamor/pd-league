@@ -1,0 +1,18 @@
+#import "../fragments/user.gql"
+
+mutation signin($input: LoginUserInput!) {
+  authenticatedUser: login(input: $input) {
+    user {
+      ...user
+      account_type
+    }
+    tokens {
+      token
+      refreshToken
+    }
+    errors {
+      field
+      message
+    }
+  }
+}

@@ -1,0 +1,7 @@
+query getClubs {
+  clubs {
+    id
+    key
+    name
+  }
+}

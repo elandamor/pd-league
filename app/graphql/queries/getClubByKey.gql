@@ -1,0 +1,13 @@
+query getClubByKey($key: String) {
+  club(key: $key) {
+    id
+    name
+    website
+    squad {
+      avatar
+      name
+      number
+      position
+    }
+  }
+}

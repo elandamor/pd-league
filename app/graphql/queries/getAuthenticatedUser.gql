@@ -1,0 +1,8 @@
+#import "../fragments/user.gql"
+
+query getAuthenticatedUser {
+  currentUser {
+    ...user
+    token
+  }
+}

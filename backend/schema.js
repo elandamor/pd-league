@@ -43,7 +43,7 @@ const resolvers = {
 
       return find(users, { token });
     },
-    fixtures: () => fixtures,
+    // fixtures: () => fixtures,
     users: () => users,
     user: (_, { id }) => find(users, { id }),
   },
@@ -122,29 +122,29 @@ const users = [
   },
 ];
 
-const fixtures = [
-  {
-    gameweek: 24,
-    kickoffs: [
-      {
-        datetime: '201734512762TZ',
-        teams: ['manutd', 'arsenal'],
-      },
-      {
-        datetime: '201734512762TZ',
-        teams: ['chelsea', 'southamton'],
-      },
-      {
-        datetime: '201734512762TZ',
-        teams: ['liverpool', 'arsenal'],
-      },
-      {
-        datetime: '201734512762TZ',
-        teams: ['chelsea', 'manutd'],
-      },
-    ],
-  },
-];
+// const fixtures = [
+//   {
+//     gameweek: 24,
+//     kickoffs: [
+//       {
+//         datetime: '201734512762TZ',
+//         teams: ['manutd', 'arsenal'],
+//       },
+//       {
+//         datetime: '201734512762TZ',
+//         teams: ['chelsea', 'southamton'],
+//       },
+//       {
+//         datetime: '201734512762TZ',
+//         teams: ['liverpool', 'arsenal'],
+//       },
+//       {
+//         datetime: '201734512762TZ',
+//         teams: ['chelsea', 'manutd'],
+//       },
+//     ],
+//   },
+// ];
 
 const clubs = [
   {

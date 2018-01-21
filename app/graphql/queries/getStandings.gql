@@ -1,0 +1,43 @@
+query getStandings {
+  standings {
+    position {
+      current
+      previous
+    }
+    club {
+      badge
+      key
+      name
+    }
+    played
+    won
+    drawn
+    lost
+    goals {
+      for
+      against
+      difference
+    }
+    points
+    form {
+      id
+      kickoff
+      home
+      against {
+        badge
+        name
+        abbr
+      }
+      result
+    }
+    nextMatch {
+      kickoff
+      against {
+        badge
+        name
+        abbr
+      }
+    }
+  }
+}
+

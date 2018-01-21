@@ -44,6 +44,7 @@ injectGlobal`
     -moz-font-feature-settings: 'liga', 'kern' 1;
     -webkit-font-smoothing: antialiased;
     font-kerning: normal;
+    font-size: 14px;
     font-weight: 400;
     height: 100%;
     letter-spacing: 0.01rem;
@@ -67,5 +68,9 @@ injectGlobal`
       animation: ${shiftRightwards} 1s ease-in-out infinite;
       animation-delay: .4s;
     }
+  }
+
+  ol li, ul li {
+    list-style-type: none;
   }
 `;

@@ -10,11 +10,13 @@ import PropTypes from 'prop-types';
 import localForage from 'localforage';
 // Components
 import AuthenticatedRoute from '../../components/AuthenticatedRoute';
+import Header from '../../components/Header';
 // Routes {Pages}
 import Account from '../../pages/Account/Loadable';
 import Clubs from '../../pages/Clubs/Loadable';
 import Home from '../../pages/Home/Loadable';
 import NotFound from '../../pages/NotFound/Loadable';
+import Tables from '../../pages/Tables/Loadable';
 // Queries
 import getAuthenticatedUserGQL from '../../graphql/queries/getAuthenticatedUser.gql';
 // Styled-Components
@@ -61,12 +63,12 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      appBarTitle: '',
-      authenticating: true,
-      mq648: false,
-      mq1440: false,
-      mql648,
-      mql1440,
+      // appBarTitle: '',
+      // authenticating: true,
+      // mq648: false,
+      // mq1440: false,
+      // mql648,
+      // mql1440,
       theme: themeLight,
     };
   }
@@ -75,21 +77,21 @@ class App extends React.Component {
     mql648.addListener(this.mediaQueryChanged);
     mql1440.addListener(this.mediaQueryChanged);
 
-    this.setState({
-      mql648,
-      mql1440,
-      mq648: mql648.matches,
-      mq1440: mql1440.matches,
-    });
+    // this.setState({
+    //   mql648,
+    //   mql1440,
+    //   mq648: mql648.matches,
+    //   mq1440: mql1440.matches,
+    // });
   }
 
-  componentWillReceiveProps({ authenticating }) {
-    if (!authenticating) {
-      this.setState({
-        authenticating: false,
-      });
-    }
-  }
+  // componentWillReceiveProps({ authenticating }) {
+  //   if (!authenticating) {
+  //     this.setState({
+  //       authenticating: false,
+  //     });
+  //   }
+  // }
 
   componentWillUnmount = () => {
     const { mql } = this.state;
@@ -99,18 +101,18 @@ class App extends React.Component {
     }
   }
 
-  setAppBarTitle = (title) => {
-    this.setState({
-      appBarTitle: title,
-    });
-  }
+  // setAppBarTitle = (title) => {
+  //   this.setState({
+  //     appBarTitle: title,
+  //   });
+  // }
 
-  mediaQueryChanged = () => {
-    this.setState({
-      mq648: this.state.mql648.matches,
-      mq1440: this.state.mql648.matches,
-    });
-  }
+  // mediaQueryChanged = () => {
+  //   this.setState({
+  //     mq648: this.state.mql648.matches,
+  //     mq1440: this.state.mql648.matches,
+  //   });
+  // }
 
   logout = () => {
     const { history } = this.props;
@@ -134,9 +136,12 @@ class App extends React.Component {
       <ThemeProvider theme={theme}>
         <Container className="app-container">
           <Bootstrap theme={theme} />
-          <button onClick={this.logout}>Logout</button>
+          <Header>
+            <button onClick={this.logout}>Logout</button>
+          </Header>
           <Switch>
             <Route path="/account" component={Account} />
+            <Route path="/tables" component={Tables} />
             <AuthenticatedRoute
               exact
               path="/"

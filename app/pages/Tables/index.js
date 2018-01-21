@@ -9,7 +9,7 @@ import { Helmet } from 'react-helmet';
 import Icon from '../../components/Icon';
 import { ICONS } from '../../components/Icon/constants';
 // Containers
-import GetStandings from '../../containers/GetStandings';
+import GetStandings from '../../containers/GetStandings/Loadable';
 // Styled-Components
 import Wrapper, { Masthead, Dropdown, Filters } from './styles';
 

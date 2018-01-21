@@ -24,6 +24,7 @@ const typeDefs = `
     abbr: String
     website: String
     squad: [Player]
+    stadium: String
     stats: Statistics
   }
 

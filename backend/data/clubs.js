@@ -4,6 +4,7 @@ const clubs = [
     key: 'arsenal',
     name: 'Arsenal',
     website: 'www.arsenal.com',
+    stadium: 'Emirates Stadium',
     squad: [
       {
         avatar: 'https://platform-static-files.s3.amazonaws.com/premierleague/photos/players/110x140/p48844.png',
@@ -32,21 +33,25 @@ const clubs = [
     key: 'chelsea',
     name: 'Chelsea',
     website: 'www.chelseafc.com',
+    stadium: 'Stamford Bridge',
   }, {
     id: '2d8c7ac9-d92e-47af-8312-995077914373',
     key: 'liverpool',
     name: 'Liverpool',
     website: 'www.liverpoolfc.com',
+    stadium: 'Anfield',
   }, {
     id: '2d8c7ac9-d92e-47af-8312-995077914374',
     key: 'manutd',
     name: 'Manchester United',
     website: 'manutd.com',
+    stadium: 'Old Trafford',
   }, {
     id: '2d8c7ac9-d92e-47af-8312-995077914375',
     key: 'southampton',
     name: 'Southampton',
     website: 'www.southamptonfc.com',
+    stadium: "St. Mary's Stadium",
   },
 ];
 

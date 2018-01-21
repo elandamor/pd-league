@@ -3,5 +3,6 @@ query getClubs {
     id
     key
     name
+    stadium
   }
 }

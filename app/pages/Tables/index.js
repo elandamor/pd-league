@@ -4,8 +4,10 @@
 
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
 // import PropTypes from 'prop-types';
 // Components
+import Avatar from '../../components/Avatar';
 import Icon from '../../components/Icon';
 import { ICONS } from '../../components/Icon/constants';
 // Styled-Components
@@ -14,6 +16,194 @@ import Wrapper, { Masthead, Dropdown, Filters, Table } from './styles';
 // eslint-disable-next-line react/prefer-stateless-function
 class Tables extends React.Component {
   render() {
+    const data = [{
+      position: {
+        current: 10,
+        previous: 10,
+      },
+      club: {
+        badge: '',
+        key: 'mancity',
+        name: 'Manchester City',
+      },
+      played: 24,
+      won: 21,
+      drawn: 2,
+      lost: 1,
+      goals: {
+        for: 70,
+        against: 18,
+        // eslint-disable-next-line no-constant-condition
+        difference: 70 - 18 > 0 ? `+${70 - 18}` : `-${70 - 18}`,
+      },
+      points: 65,
+      form: [
+        {
+          id: '22577',
+          kickoff: 'Wednesday 27 December 2017',
+          home: false,
+          against: {
+            badge: '',
+            name: 'Newcastle United',
+            abbr: 'NEW',
+          },
+          result: 'W',
+        }, {
+          id: '22578',
+          kickoff: 'Sunday 31 December 2017',
+          home: false,
+          against: {
+            name: 'Crystal Palace',
+            abbr: 'CRY',
+          },
+          result: 'D',
+        }, {
+          id: '22579',
+          kickoff: 'Tuesday 2 January 2018',
+          home: true,
+          against: {
+            name: 'Watford',
+            abbr: 'WAT',
+          },
+          result: 'W',
+        }, {
+          id: '22580',
+          kickoff: 'Sunday 14 January 2018',
+          home: false,
+          against: {
+            name: 'Liverpool',
+            abbr: 'LIV',
+          },
+          result: 'L',
+        }, {
+          id: '22581',
+          kickoff: 'Saturday 20 January 2018',
+          home: true,
+          against: {
+            name: 'Newcastle United',
+            abbr: 'NEW',
+          },
+          result: 'W',
+        },
+      ],
+      nextMatch: {
+        kickoff: 'Wednesday 31 January 2018',
+        against: {
+          badge: '',
+          name: 'West Bromwich Albion',
+          abbr: 'WBA',
+        },
+      },
+    }];
+
+    const columns = [{
+      id: 'position',
+      Header: 'Position',
+      accessor: (d) => (
+        <span className="position">
+          {d.position.current}
+          {
+            d.position.current === d.position.previous
+            && (
+              <span className="a-movement"></span>
+            )
+          }
+          {
+            d.position.current < d.position.previous
+            && (
+              <span className="a-movement -up"></span>
+            )
+          }
+          {
+            d.position.current > d.position.previous
+            && (
+              <span className="a-movement -down"></span>
+            )
+          }
+          <span className="c-tooltip -left" role="tooltip">
+            <span className="c-tooltip__content">Previous Position
+              <strong>{d.position.previous}</strong>
+            </span>
+          </span>
+        </span>
+      ),
+    }, {
+      id: 'club',
+      Header: 'Club',
+      accessor: (d) => (
+        <Link to={`/clubs/${d.club.key}`}>
+          <Avatar className="c-badge" src={d.club.badge} />
+          {d.club.name}
+        </Link>
+      ),
+    }, {
+      Header: 'Played',
+      accessor: 'played',
+    }, {
+      Header: 'Won',
+      accessor: 'won',
+    }, {
+      Header: 'Drawn',
+      accessor: 'drawn',
+    }, {
+      Header: 'Lost',
+      accessor: 'lost',
+    }, {
+      Header: () => <abbr title="Goals For">GF</abbr>,
+      accessor: 'goals.for',
+    }, {
+      Header: () => <abbr title="Goals Against">GA</abbr>,
+      accessor: 'goals.against',
+    }, {
+      Header: () => <abbr title="Goal Difference">GD</abbr>,
+      accessor: 'goals.difference',
+    }, {
+      id: 'points',
+      Header: 'Points',
+      accessor: (d) => <strong>{d.points}</strong>,
+    }, {
+      id: 'form',
+      Header: 'Form',
+      accessor: ({ form }) => (
+        form.map((match) => {
+          let cls;
+          let title;
+
+          switch (match.result) {
+            case 'W':
+              cls = ' won';
+              title = 'Won';
+              break;
+            case 'D':
+              cls = ' draw';
+              title = 'Drawn';
+              break;
+            case 'L':
+              cls = ' lose';
+              title = 'Lost';
+              break;
+            default:
+              cls = '';
+              title = '';
+              break;
+          }
+          return (
+            <li key={match.id} className={`c-tooltip__wrapper ${cls}`}>
+              <abbr title={title}>{match.result}</abbr>
+            </li>
+          );
+        })
+      ),
+    }, {
+      id: 'nextMatch',
+      Header: 'Next',
+      accessor: ({ nextMatch }) => (
+        <div className="nextMatch" role="tooltip">
+          <Avatar src={nextMatch.against.badge} />
+        </div>
+      ),
+    }];
+
     return (
       <Wrapper>
         <Helmet>
@@ -117,6 +307,7 @@ class Tables extends React.Component {
 
                   return (
                     <li
+                      key={key}
                       role="option"
                       tabIndex="0"
                       aria-selected="false"
@@ -185,77 +376,13 @@ class Tables extends React.Component {
             Reset Filters <Icon icon={ICONS.RESET} />
           </button>
         </Filters>
-        <Table>
-          <thead className="c-table__header">
-            <tr>
-              <th>More</th>
-              <th>Position</th>
-              <th>Club</th>
-              <th>Played</th>
-              <th>Won</th>
-              <th>Drawn</th>
-              <th>Lost</th>
-              <th>GF</th>
-              <th>GA</th>
-              <th>GD</th>
-              <th>Points</th>
-              <th>Form</th>
-              <th>Next</th>
-            </tr>
-          </thead>
-          <tbody className="c-table__content">
-            <tr data-filtered-table-row-name="Chelsea" data-filtered-table-row-abbr="CHE">
-              <td className="revealMore">
-                <div className="icn chevron-down-g"></div>
-              </td>
-              <td className="pos button-tooltip" id="Tooltip">
-                <span className="value">3</span>
-                <span className="movement up">
-                  <span className="tooltipContainer tooltip-left" role="tooltip">
-                    <span className="tooltip-content">Previous Position <span className="resultHighlight">4</span></span>
-                  </span>
-                </span>
-              </td>
-              <td className="team">
-                <a href="//www.premierleague.com/clubs/4/Chelsea/overview">
-                  <span className="badge-25 t8"></span>
-                  <span className="long">Chelsea</span>
-                  <span className="short">CHE</span>
-                </a>
-              </td>
-              <td>24</td>
-              <td>15</td>
-              <td>5</td>
-              <td>4</td>
-              <td className="hideSmall">45</td>
-              <td className="hideSmall">16</td>
-              <td>29</td>
-              <td className="points">50</td>
-              <td className="form hideMed">
-                <ul>
-                  <li className="win button-tooltip" id="Tooltip">
-                    <abbr title="Won" className="form-abbreviation">W</abbr>
-                    <a href="//www.premierleague.com/match/22533" className="tooltipContainer linkable tooltip-link tooltip-right">
-                      <span className="tooltip-content">
-                        <span className="matchAbridged">
-                          <span className="matchInfo">
-                            <span className="resultHighlight">Won </span>
-                            Tuesday 26 December 2017
-                          </span><span className="teamName">Chelsea </span>
-                          <span className="badge-20 t8"></span>
-                          <span className="score">2<span>-</span>0 </span>
-                          <span className="badge-20 t36"></span>
-                          <span className="teamName">Brighton and Hove Albion </span>
-                          <span className="icn arrow-right"></span>
-                        </span>
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-          </tbody>
-        </Table>
+        <Table
+          className="-striped"
+          data={data}
+          columns={columns}
+          resizable={false}
+          showPagination={false}
+        />
       </Wrapper>
     );
   }

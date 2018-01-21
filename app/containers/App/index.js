@@ -9,7 +9,6 @@ import { ThemeProvider } from 'styled-components';
 import PropTypes from 'prop-types';
 import localForage from 'localforage';
 // Components
-import AuthenticatedRoute from '../../components/AuthenticatedRoute';
 import Header from '../../components/Header';
 // Routes {Pages}
 import Account from '../../pages/Account/Loadable';
@@ -129,7 +128,7 @@ class App extends React.Component {
   }
 
   render() {
-    const { authenticatedUser, authenticating } = this.props;
+    // const { authenticatedUser, authenticating } = this.props;
     const { theme } = this.state;
 
     return (
@@ -140,23 +139,14 @@ class App extends React.Component {
             <button onClick={this.logout}>Logout</button>
           </Header>
           <Switch>
-            <Route path="/account" component={Account} />
-            <Route path="/tables" component={Tables} />
-            <AuthenticatedRoute
+            <Route
               exact
               path="/"
               component={Home}
-              authenticating={authenticating}
-              authenticatedUser={authenticatedUser}
-              onSetAppBarTitle={this.setAppBarTitle}
             />
-            <AuthenticatedRoute
-              path="/clubs"
-              component={Clubs}
-              authenticating={authenticating}
-              authenticatedUser={authenticatedUser}
-              onSetAppBarTitle={this.setAppBarTitle}
-            />
+            <Route path="/account" component={Account} />
+            <Route path="/tables" component={Tables} />
+            <Route path="/clubs" component={Clubs} />
             <Route component={NotFound} />
           </Switch>
         </Container>
@@ -165,13 +155,9 @@ class App extends React.Component {
   }
 }
 
-App.defaultProps = {
-  authenticatedUser: undefined,
-};
-
 App.propTypes = {
-  authenticatedUser: PropTypes.object,
-  authenticating: PropTypes.bool,
+  // authenticatedUser: PropTypes.object,
+  // authenticating: PropTypes.bool,
   history: PropTypes.object,
 };
 

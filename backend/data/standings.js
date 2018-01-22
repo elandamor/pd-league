@@ -4,6 +4,7 @@ const standings = [{
     previous: 1,
   },
   club: {
+    abbr: 'MCI',
     badge: '',
     key: 'mancity',
     name: 'Manchester City',

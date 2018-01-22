@@ -2,20 +2,85 @@ import styled from 'styled-components';
 import ReactTable from 'react-table';
 
 const Wrapper = styled(ReactTable)`
+  font-size: .975rem;
+  letter-spacing: 0.01rem;
   margin: 0 auto;
   max-width: 1240px;
   width: 100%;
 
-  .rt-tr {
-    display: flex;
+  .rt-th {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 7px 10px;
+    text-align: center;
+
+    &.club {
+      position: relative;
+      text-align: left;
+      width: 25%!important;
+    }
+
+    &.form {
+      width: 190px!important;
+    }
+  }
+
+  .rt-td {
+    display: table-cell;
+    padding: 7px 10px;
+    text-align: center;
+
+    &.position {
+      z-index: 1;
+    }
+
+    &.club {
+      position: relative;
+      text-align: left;
+      width: 25%!important;
+
+      a {
+        color: #000000;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        .c-badge {
+          margin-right: 15px;
+        }
+      }
+    }
+
+    &.form {
+      font-size: 13px;
+      font-weight: 600;
+      padding-right: 0;
+      width: 190px!important;
+    }
   }
 
   .rt-thead {
-    height: 32px;
+    .rt-tr {
+      align-items: center;
+      display: flex;
+    }
   }
 
   .rt-tbody {
+    .rt-tr-group {
+      border-bottom: thin solid #e8e8e8;
 
+      &:first-child {
+        background-color: #e4e4e4;
+      }
+
+      .rt-tr {
+        align-items: center;
+        display: flex;
+      }
+    }
   }
 
   .a-movement {
@@ -59,6 +124,23 @@ const Wrapper = styled(ReactTable)`
     vertical-align: middle;
     cursor: pointer;
     font-weight: 400;
+  }
+
+  .c-tooltip {
+    position: absolute;
+    bottom: 2.4rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 90;
+    padding: 0 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: visible;
+    color: #242424;
+    opacity: 0;
+    transition: .2s;
   }
 
   .c-tooltip__wrapper {

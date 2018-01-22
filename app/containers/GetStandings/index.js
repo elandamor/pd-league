@@ -18,9 +18,10 @@ import Table from './styles';
 const GetStandings = ({ standings }) => {
   const columns = [{
     id: 'position',
+    className: 'position',
     Header: 'Position',
     accessor: (d) => (
-      <span className="position">
+      <span className="number">
         {d.position.current}
         {
           d.position.current === d.position.previous
@@ -49,6 +50,8 @@ const GetStandings = ({ standings }) => {
     ),
   }, {
     id: 'club',
+    className: 'club',
+    headerClassName: 'club',
     Header: 'Club',
     accessor: (d) => (
       <Link to={`/clubs/${d.club.key}`}>
@@ -83,6 +86,8 @@ const GetStandings = ({ standings }) => {
     accessor: (d) => <strong>{d.points}</strong>,
   }, {
     id: 'form',
+    className: 'form',
+    headerClassName: 'form',
     Header: 'Form',
     accessor: ({ form }) => (
       form.map((match) => {

@@ -18,7 +18,7 @@ class Table extends Component {
         : '';
       return (
         // eslint-disable-next-line react/no-array-index-key
-        <th className={`rt-th${classes}`} key={idx}>{colHeader}</th>
+        <th className={`rt-th${classes}`} key={`h-${idx}`}>{colHeader}</th>
       );
     });
 
@@ -28,7 +28,8 @@ class Table extends Component {
       const stat = data[i];
 
       return stat && (
-        <tr className="rt-tr">
+        // eslint-disable-next-line react/no-array-index-key
+        <tr className="rt-tr" key={`r-${i}`}>
           {
             columns.map((column) => {
               const classes = column.className ? ` ${column.className}` : '';
@@ -40,7 +41,7 @@ class Table extends Component {
               }
 
               return accessor && (
-                <td className={`rt-td${classes}`}>{accessor}</td>
+                <td className={`rt-td${classes}`} key={column.accessor}>{accessor}</td>
               );
             })
           }

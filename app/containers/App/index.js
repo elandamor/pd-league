@@ -135,9 +135,7 @@ class App extends React.Component {
       <ThemeProvider theme={theme}>
         <Container className="app-container">
           <Bootstrap theme={theme} />
-          <Header>
-            <button onClick={this.logout}>Logout</button>
-          </Header>
+          <Header />
           <Switch>
             <Route
               exact

@@ -25,9 +25,7 @@ class Tables extends React.Component {
         <Masthead role="banner">
           <div className="c-inner">
             <h2 className="c-title">Tables</h2>
-            <button className="c-bttn-share">
-              <Icon icon={ICONS.LOCK} /> Share
-            </button>
+            <button className="c-bttn-share" />
           </div>
         </Masthead>
         <Filters>

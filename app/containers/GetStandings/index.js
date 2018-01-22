@@ -160,8 +160,13 @@ const mapStandingsToProps = ({ data }) => {
   };
 };
 
-export default compose( // eslint-disable-line
+/* eslint-disable function-paren-newline */
+export default compose(
   graphql(getStandingsGQL, {
+    options: {
+      fetchPolicy: 'cache-and-network',
+    },
     props: mapStandingsToProps,
   })
-)(GetStandings); // eslint-disable-line
+)(GetStandings);
+/* eslint-enable function-paren-newline */

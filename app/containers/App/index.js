@@ -4,7 +4,7 @@
 
 import React from 'react';
 import { Switch, Route, withRouter } from 'react-router-dom';
-import { compose, graphql } from 'react-apollo';
+import { compose } from 'react-apollo';
 import { ThemeProvider } from 'styled-components';
 import PropTypes from 'prop-types';
 import localForage from 'localforage';
@@ -17,7 +17,7 @@ import Home from '../../pages/Home/Loadable';
 import NotFound from '../../pages/NotFound/Loadable';
 import Tables from '../../pages/Tables/Loadable';
 // Queries
-import getAuthenticatedUserGQL from '../../graphql/queries/getAuthenticatedUser.gql';
+// import getAuthenticatedUserGQL from '../../graphql/queries/getAuthenticatedUser.gql';
 // Styled-Components
 import Container from './styles';
 // Helpers
@@ -161,31 +161,32 @@ App.propTypes = {
   history: PropTypes.object,
 };
 
-const mapAuthenticatedUserToProps = ({ data }) => {
-  if (data.error) {
-    return {
-      authenticating: data.loading,
-      error: data.error,
-    };
-  }
+// const mapAuthenticatedUserToProps = ({ data }) => {
+//   if (data.error) {
+//     return {
+//       authenticating: data.loading,
+//       error: data.error,
+//     };
+//   }
 
-  if (!data.currentUser) {
-    return {
-      authenticating: data.loading,
-    };
-  }
+//   if (!data.currentUser) {
+//     return {
+//       authenticating: data.loading,
+//     };
+//   }
 
-  const { currentUser } = data;
+//   const { currentUser } = data;
 
-  return {
-    authenticatedUser: currentUser,
-    authenticating: data.loading,
-  };
-};
-
+//   return {
+//     authenticatedUser: currentUser,
+//     authenticating: data.loading,
+//   };
+// };
+/* eslint-disable function-paren-newline */
 export default compose(
-  graphql(getAuthenticatedUserGQL, {
-    props: mapAuthenticatedUserToProps,
-  }),
+  // graphql(getAuthenticatedUserGQL, {
+  //   props: mapAuthenticatedUserToProps,
+  // }),
   withRouter,
 )(App);
+/* eslint-enable function-paren-newline */

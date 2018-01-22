@@ -81,6 +81,9 @@ const mapClubsToProps = ({ data }) => {
 /* eslint-disable function-paren-newline */
 export default compose(
   graphql(getClubsGQL, {
+    options: {
+      fetchPolicy: 'cache-and-network',
+    },
     props: mapClubsToProps,
   }),
 )(GetClubs);

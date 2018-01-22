@@ -1,7 +1,7 @@
 const standings = [{
   position: {
     current: 1,
-    previous: 10,
+    previous: 1,
   },
   club: {
     badge: '',
@@ -22,7 +22,7 @@ const standings = [{
   form: [
     {
       id: '22577',
-      kickoff: 'Wednesday 27 December 2017',
+      kickoff: new Date('27 December 2017 14:00 UTC').toISOString(),
       home: false,
       against: {
         badge: '',
@@ -32,36 +32,40 @@ const standings = [{
       result: 'W',
     }, {
       id: '22578',
-      kickoff: 'Sunday 31 December 2017',
+      kickoff: new Date('31 December 2017 14:00 UTC').toISOString(),
       home: false,
       against: {
+        badge: '',
         name: 'Crystal Palace',
         abbr: 'CRY',
       },
       result: 'D',
     }, {
       id: '22579',
-      kickoff: 'Tuesday 2 January 2018',
+      kickoff: new Date('2 January 2018 14:00 UTC').toISOString(),
       home: true,
       against: {
+        badge: '',
         name: 'Watford',
         abbr: 'WAT',
       },
       result: 'W',
     }, {
       id: '22580',
-      kickoff: 'Sunday 14 January 2018',
+      kickoff: new Date('14 January 2018 14:00 UTC').toISOString(),
       home: false,
       against: {
+        badge: '',
         name: 'Liverpool',
         abbr: 'LIV',
       },
       result: 'L',
     }, {
       id: '22581',
-      kickoff: 'Saturday 20 January 2018',
+      kickoff: new Date('20 January 2018 14:00 UTC').toISOString(),
       home: true,
       against: {
+        badge: '',
         name: 'Newcastle United',
         abbr: 'NEW',
       },
@@ -69,7 +73,7 @@ const standings = [{
     },
   ],
   nextMatch: {
-    kickoff: 'Wednesday 31 January 2018',
+    kickoff: new Date('31 January 2018 14:00 UTC').toISOString(),
     against: {
       badge: '',
       name: 'West Bromwich Albion',

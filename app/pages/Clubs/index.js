@@ -25,9 +25,7 @@ class Clubs extends React.Component {
         <Masthead role="banner">
           <div className="c-inner">
             <h2 className="c-title">Clubs</h2>
-            <button className="c-bttn-share">
-              <Icon icon={ICONS.LOCK} /> Share
-            </button>
+            <button className="c-bttn-share" />
           </div>
         </Masthead>
         <Filters>

@@ -35,11 +35,7 @@ const Masthead = styled.div`
     height: 40px;
     letter-spacing: 0.025rem;
     padding: 0.7rem 0.85rem;
-
-    .icon, svg {
-      height: 16px;
-      width: 16px;
-    }
+    min-width: 80px;
   }
 `;
 
@@ -51,6 +47,8 @@ const Filters = styled.div`
   max-width: 1240px;
   padding: 2rem 0;
   position: relative;
+
+  visibility: hidden;
 
   .c-bttn-reset {
     background-color: #76766f;

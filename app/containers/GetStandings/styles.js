@@ -56,14 +56,13 @@ const Wrapper = styled(Table)`
 
     &.form {
       font-size: 13px;
-      font-weight: 600;
       padding-right: 0;
       width: 190px!important;
+
+      abbr {
+        font-weight: 700;
+      }
     }
-  }
-
-  .rt-thead {
-
   }
 
   .rt-tbody {

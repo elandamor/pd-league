@@ -137,11 +137,7 @@ class App extends React.Component {
           <Bootstrap theme={theme} />
           <Header />
           <Switch>
-            <Route
-              exact
-              path="/"
-              component={Home}
-            />
+            <Route exact path="/" component={Home} />
             <Route path="/account" component={Account} />
             <Route path="/tables" component={Tables} />
             <Route path="/clubs" component={Clubs} />

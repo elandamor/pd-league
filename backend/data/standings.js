@@ -165,6 +165,89 @@ const standings = [
         abbr: 'TOT',
       },
     },
+  }, {
+    position: {
+      current: 3,
+      previous: 4,
+    },
+    club: {
+      abbr: 'CHE',
+      badge: '',
+      key: 'chelsea',
+      name: 'Chelsea',
+    },
+    played: 24,
+    won: 15,
+    drawn: 5,
+    lost: 4,
+    goals: {
+      for: 45,
+      against: 16,
+      // eslint-disable-next-line no-constant-condition
+      difference: 45 - 16 > 0 ? `+${45 - 16}` : `-${45 - 16}`,
+    },
+    points: 50,
+    form: [
+      {
+        id: '22587',
+        kickoff: new Date('26 December 2017 14:00 UTC').toISOString(),
+        home: true,
+        against: {
+          badge: '',
+          name: 'Brighton and Hove Albion',
+          abbr: 'BHA',
+        },
+        result: 'W',
+      }, {
+        id: '22588',
+        kickoff: new Date('30 December 2017 14:00 UTC').toISOString(),
+        home: true,
+        against: {
+          badge: '',
+          name: 'Stoke City',
+          abbr: 'STK',
+        },
+        result: 'W',
+      }, {
+        id: '22589',
+        kickoff: new Date('3 January 2018 14:00 UTC').toISOString(),
+        home: false,
+        against: {
+          badge: '',
+          name: 'Arsenal',
+          abbr: 'ARS',
+        },
+        result: 'D',
+      }, {
+        id: '22590',
+        kickoff: new Date('13 January 2018 14:00 UTC').toISOString(),
+        home: true,
+        against: {
+          badge: '',
+          name: 'Leicester City',
+          abbr: 'LEI',
+        },
+        result: 'D',
+      }, {
+        id: '22591',
+        kickoff: new Date('20 January 2018 14:00 UTC').toISOString(),
+        home: false,
+        against: {
+          badge: '',
+          name: 'Brighton and Hove Albion',
+          abbr: 'BHA',
+        },
+        result: 'W',
+      },
+    ],
+    nextMatch: {
+      kickoff: new Date('31 January 2018 20:00 UTC').toISOString(),
+      against: {
+        badge: '',
+        name: 'Bournemouth',
+        abbr: 'BOU',
+      },
+    },
   },
 ];
 

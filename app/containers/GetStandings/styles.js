@@ -72,8 +72,16 @@ const Wrapper = styled(ReactTable)`
     .rt-tr-group {
       border-bottom: thin solid #e8e8e8;
 
+      &:nth-child(-n+4) {
+        background-color: #eee;
+      }
+
       &:first-child {
         background-color: #e4e4e4;
+      }
+
+      &:nth-child(5) {
+        background-color: #f8f8f8;
       }
 
       .rt-tr {

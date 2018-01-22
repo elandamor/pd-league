@@ -2,6 +2,7 @@ import express from 'express';
 import { graphqlExpress, graphiqlExpress } from 'apollo-server-express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
+import kill from 'kill-port';
 
 import * as Schema from './schema';
 
@@ -50,21 +51,33 @@ server.use('/graphql', bodyParser.json(), graphqlExpress(async (request) => {
 
 server.use('/graphiql', graphiqlExpress({
   endpointURL: '/graphql',
-  query: `# Welcome to GraphiQL
+  query: `# Welcome to the pdLeague GraphiQL
 
-query PostsForAuthor {
-  author(id: 1) {
-    firstName
-    posts {
-      title
-      votes
+query getStandings {
+  standings {
+    position {
+      current
+      previous
+    }
+    club {
+      abbr
+      name
     }
   }
 }`,
 }));
+
 /* eslint-disable no-console */
-server.listen(PORT, () => {
-  console.log(`GraphQL Server is now running on http://localhost:${PORT}/graphql`);
-  console.log(`View GraphiQL at http://localhost:${PORT}/graphiql`);
+kill(PORT).then(() => {
+  server.listen(PORT, () => {
+    console.log(`GraphQL Server is now running on http://localhost:${PORT}/graphql`);
+    console.log(`View GraphiQL at http://localhost:${PORT}/graphiql`);
+  });
+}).catch(() => {
+  server.listen(PORT, () => {
+    console.log(`GraphQL Server is now running on http://localhost:${PORT}/graphql`);
+    console.log(`View GraphiQL at http://localhost:${PORT}/graphiql`);
+  });
 });
 /* eslint-enable no-console */
+

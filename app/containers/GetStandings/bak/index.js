@@ -9,10 +9,9 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { compose, graphql } from 'react-apollo';
 // Components
-import Avatar from '../../components/Avatar';
-// import Table from '../../components/Table';
+import Avatar from '../../../components/Avatar';
 // Queries
-import getStandingsGQL from '../../graphql/queries/getStandings.gql';
+import getStandingsGQL from '../../../graphql/queries/getStandings.gql';
 // Styled-Components
 import Table from './styles';
 
@@ -74,13 +73,13 @@ const GetStandings = ({ standings }) => {
     accessor: 'lost',
   }, {
     Header: () => <abbr title="Goals For">GF</abbr>,
-    accessor: (d) => d.goals.for,
+    accessor: 'goals.for',
   }, {
     Header: () => <abbr title="Goals Against">GA</abbr>,
-    accessor: (d) => d.goals.against,
+    accessor: 'goals.against',
   }, {
     Header: () => <abbr title="Goal Difference">GD</abbr>,
-    accessor: (d) => d.goals.difference,
+    accessor: 'goals.difference',
   }, {
     id: 'points',
     Header: 'Points',
@@ -132,8 +131,11 @@ const GetStandings = ({ standings }) => {
 
   return (
     <Table
+      className="-striped"
       data={standings}
       columns={columns}
+      resizable={false}
+      showPagination={false}
     />
   );
 };

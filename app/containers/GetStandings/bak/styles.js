@@ -1,8 +1,7 @@
 import styled from 'styled-components';
+import ReactTable from 'react-table';
 
-import Table from '../../components/Table';
-
-const Wrapper = styled(Table)`
+const Wrapper = styled(ReactTable)`
   font-size: .975rem;
   letter-spacing: 0.01rem;
   margin: 0 auto;
@@ -18,11 +17,11 @@ const Wrapper = styled(Table)`
     &.club {
       position: relative;
       text-align: left;
-      width: 25%;
+      width: 25%!important;
     }
 
     &.form {
-      width: 190px;
+      width: 190px!important;
     }
   }
 
@@ -63,11 +62,14 @@ const Wrapper = styled(Table)`
   }
 
   .rt-thead {
-
+    .rt-tr {
+      align-items: center;
+      display: flex;
+    }
   }
 
   .rt-tbody {
-    .rt-tr {
+    .rt-tr-group {
       border-bottom: thin solid #e8e8e8;
 
       &:nth-child(-n+4) {
@@ -80,6 +82,11 @@ const Wrapper = styled(Table)`
 
       &:nth-child(5) {
         background-color: #f8f8f8;
+      }
+
+      .rt-tr {
+        align-items: center;
+        display: flex;
       }
     }
   }

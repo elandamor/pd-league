@@ -61,13 +61,6 @@ const Wrapper = styled(ReactTable)`
     }
   }
 
-  .rt-thead {
-    .rt-tr {
-      align-items: center;
-      display: flex;
-    }
-  }
-
   .rt-tbody {
     .rt-tr-group {
       border-bottom: thin solid #e8e8e8;

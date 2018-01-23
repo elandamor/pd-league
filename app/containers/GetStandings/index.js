@@ -55,7 +55,7 @@ const GetStandings = ({ standings }) => {
     headerClassName: 'club',
     Header: 'Club',
     accessor: (d) => (
-      <Link to={`/clubs/${d.club.key}`}>
+      <Link to={`/clubs/${d.club.abbr}/overview`}>
         <Avatar className="c-badge" src={d.club.badge} />
         {d.club.name}
       </Link>

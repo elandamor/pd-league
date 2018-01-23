@@ -1,3 +1,5 @@
+#import "../fragments/club.gql"
+
 query getStandings {
   standings {
     position {
@@ -5,9 +7,7 @@ query getStandings {
       previous
     }
     club {
-      badge
-      key
-      name
+      ...club
     }
     played
     won
@@ -24,18 +24,14 @@ query getStandings {
       kickoff
       home
       against {
-        badge
-        name
-        abbr
+        ...club
       }
       result
     }
     nextMatch {
       kickoff
       against {
-        badge
-        name
-        abbr
+        ...club
       }
     }
   }

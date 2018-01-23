@@ -6,7 +6,7 @@ const Wrapper = styled.ul`
   grid-gap: 1rem;
   margin: 0 auto;
   max-width: 1240px;
-  padding: 0;
+  padding: 0 0 4rem;
   width: 100%;
 `;
 

@@ -34,6 +34,41 @@ const clubs = [
     name: 'Southampton',
     website: 'www.southamptonfc.com',
     stadium: "St. Mary's Stadium",
+  }, {
+    id: '2d8c7ac9-d92e-47af-8312-995077914376',
+    abbr: 'TOT',
+    key: 'tottenham',
+    name: 'Tottenham Hotspur',
+    website: 'www.tottenhamhotspur.com',
+    stadium: 'Wembley Stadium',
+  }, {
+    id: '2d8c7ac9-d92e-47af-8312-995077914377',
+    abbr: 'EVE',
+    key: 'everton',
+    name: 'Everton FC',
+    website: 'www.evertonfc.com',
+    stadium: 'Goodison Park',
+  }, {
+    id: '2d8c7ac9-d92e-47af-8312-995077914378',
+    abbr: 'MCI',
+    key: 'mancity',
+    name: 'Manchester City',
+    website: 'www.mancity.com',
+    stadium: 'Etihad Stadium',
+  }, {
+    id: '2d8c7ac9-d92e-47af-8312-995077914379',
+    abbr: 'LEI',
+    key: 'leicester',
+    name: 'Leicester City',
+    website: 'www.lcfc.com',
+    stadium: 'King Power Stadium',
+  }, {
+    id: '2d8c7ac9-d92e-47af-8312-995077914380',
+    abbr: 'BUR',
+    key: 'burnley',
+    name: 'Burnley',
+    website: 'www.burnleyfootball.com',
+    stadium: 'Turf Moor',
   },
 ];
 

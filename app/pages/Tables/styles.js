@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-const Wrapper = styled.div`
+const Wrapper = styled.main`
 
 `;
 
 const Masthead = styled.div`
-  background-color: #38003c;
+  background-color: ${(props) => props.theme.palette.brandPrimary};
   height: 140px;
   width: 100%;
 

@@ -13,6 +13,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { ApolloProvider } from 'react-apollo';
+import FontFaceObserver from 'fontfaceobserver';
 
 import 'sanitize.css/sanitize.css';
 
@@ -39,6 +40,17 @@ import './global-styles';
 
 // Import apollo client
 import client from './configs/apollo-client';
+
+// Observe loading of Open Sans (to remove open sans, remove the <link> tag in
+// the index.html file and this observer)
+const montserratObserver = new FontFaceObserver('Montserrat');
+
+// When Open Sans is loaded, add a font-family using Open Sans to the body
+montserratObserver.load().then(() => {
+  document.body.classList.add('fontLoaded');
+}, () => {
+  document.body.classList.remove('fontLoaded');
+});
 
 const MOUNT_NODE = document.getElementById('app');
 

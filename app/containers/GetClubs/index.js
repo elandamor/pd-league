@@ -24,10 +24,10 @@ const GetClubs = ({ data }) => {
   if (hasClubs) {
     clubs = data.clubs.map((club) => { // eslint-disable-line arrow-body-style
       return (
-        <Club key={club.id}>
+        <Club key={club.abbr}>
           <Link
             to={{
-              pathname: `/clubs/${club.key}`,
+              pathname: `/clubs/${club.abbr}/overview`,
             }}
           >
             <div className="c-image">

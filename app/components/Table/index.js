@@ -26,12 +26,12 @@ class Table extends Component {
       );
     });
 
-    const body = columns.map((col, i) => {
+    const body = data.map((_, i) => {
       let accessor;
 
-      const stat = data[i];
+      const item = data[i];
 
-      return stat && (
+      return item && (
         // eslint-disable-next-line react/no-array-index-key
         <tr className="rt-tr" key={`r-${i}`}>
           {
@@ -39,9 +39,9 @@ class Table extends Component {
               const classes = column.className ? ` ${column.className}` : '';
 
               if (typeof (column.accessor) === 'function') {
-                accessor = column.accessor(stat);
+                accessor = column.accessor(item);
               } else {
-                accessor = stat[column.accessor];
+                accessor = item[column.accessor];
               }
 
               return accessor && (

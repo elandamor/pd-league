@@ -8,6 +8,10 @@ class Table extends Component {
   render() {
     const { columns, data, ...rest } = this.props;
 
+    if (!data) {
+      return null;
+    }
+
     const head = columns.map((column, idx) => {
       const colHeader = typeof (column.Header) === 'function'
         ? column.Header()

@@ -43,6 +43,7 @@ injectGlobal`
     -moz-osx-font-smoothing: grayscale;
     -moz-font-feature-settings: 'liga', 'kern' 1;
     -webkit-font-smoothing: antialiased;
+    color: #242424;
     font-kerning: normal;
     font-size: 14px;
     font-weight: 400;
@@ -60,6 +61,10 @@ injectGlobal`
 
   body {
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Ubuntu,Helvetica Neue,sans-serif;
+  }
+
+  body.fontLoaded {
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 
   .is-loading {

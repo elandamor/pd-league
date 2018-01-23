@@ -13,6 +13,7 @@ const Wrapper = styled.ul`
 const Club = styled.li`
   background-color: #ffffff;
   border: thin solid #ededed;
+  letter-spacing: 0;
   position: relative;
 
   a {
@@ -50,7 +51,7 @@ const Club = styled.li`
     }
 
     .a-stadium {
-      color: #555;
+      color: #242424;
       font-size: 12px;
       line-height: 1.4;
       margin-top: 5px;

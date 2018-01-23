@@ -2,8 +2,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.header`
   align-items: center;
-  background-color: ${(props) => props.theme.palette.cardBackground};
-  border-bottom: thin solid ${(props) => props.theme.palette.cardBorderColor};
+  background-color: ${(props) => props.theme.palette.brandPrimary};
   display: flex;
   height: 64px;
   padding-left: 64px;

@@ -15,7 +15,7 @@ const clubs = [
     abbr: 'BHA',
     badge: '',
     name: 'Brighton and Hove Albion',
-    website: '',
+    website: 'www.brightonandhovealbion.com',
     stadium: 'Amex Stadium',
   }, {
     abbr: 'BUR',
@@ -33,7 +33,7 @@ const clubs = [
     abbr: 'CRY',
     badge: '',
     name: 'Crystal Palace',
-    website: '',
+    website: 'www.cpfc.co.uk',
     stadium: 'Selhurst Park',
   }, {
     abbr: 'EVE',

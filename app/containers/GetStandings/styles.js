@@ -80,6 +80,10 @@ const Wrapper = styled(Table)`
       &:nth-child(5) {
         background-color: #f8f8f8;
       }
+
+      &:nth-last-child(-n+3) {
+        background-color: #eee;
+      }
     }
   }
 

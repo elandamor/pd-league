@@ -9,6 +9,7 @@ import { ThemeProvider } from 'styled-components';
 import PropTypes from 'prop-types';
 import localForage from 'localforage';
 // Components
+import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 // Routes {Pages}
 import Account from '../../pages/Account/Loadable';
@@ -26,7 +27,7 @@ import matchMedia from '../../utils/helpers/matchMedia';
 const themeDark = { // eslint-disable-line no-unused-vars
   isDark: true,
   palette: {
-    brandPrimary: '#25252D',
+    brandPrimary: '#38003c',
     bodyBackground: '#1F1F27',
     cardBackground: '#25252D',
     cardBorderColor: '#414148',
@@ -36,7 +37,7 @@ const themeDark = { // eslint-disable-line no-unused-vars
 const themeLight = { // eslint-disable-line no-unused-vars
   isDark: false,
   palette: {
-    brandPrimary: '#ffffff',
+    brandPrimary: '#000000',
     bodyBackground: '#fafafa',
     cardBackground: '#ffffff',
     cardBorderColor: '#ededed',
@@ -135,7 +136,7 @@ class App extends React.Component {
       <ThemeProvider theme={theme}>
         <Container className="app-container">
           <Bootstrap theme={theme} />
-          <Header />
+          <Header className="c-app-header" />
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/account" component={Account} />
@@ -143,6 +144,7 @@ class App extends React.Component {
             <Route path="/clubs" component={Clubs} />
             <Route component={NotFound} />
           </Switch>
+          <Footer className="c-app-footer" />
         </Container>
       </ThemeProvider>
     );

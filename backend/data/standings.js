@@ -1,7 +1,7 @@
 import { _ } from 'lodash';
 import clubs from './clubs';
 
-const data = clubs && clubs.length > 0 && clubs.sort(() => 0.5 - Math.random()).map((club, idx) => {
+const standings = clubs && clubs.length > 0 && clubs.sort(() => 0.5 - Math.random()).map((club, idx) => {
   const form = [
     {
       id: '22577',
@@ -89,7 +89,5 @@ const data = clubs && clubs.length > 0 && clubs.sort(() => 0.5 - Math.random()).
     },
   };
 });
-
-const standings = data || [];
 
 export default standings;

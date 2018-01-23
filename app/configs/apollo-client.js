@@ -2,7 +2,7 @@ import { ApolloClient } from 'apollo-client';
 import { ApolloLink, split } from 'apollo-link';
 import { InMemoryCache } from 'apollo-cache-inmemory';
 import { BatchHttpLink } from 'apollo-link-batch-http';
-import { persistCache } from 'apollo-cache-persist';
+// import { persistCache } from 'apollo-cache-persist';
 import { setContext } from 'apollo-link-context';
 import { WebSocketLink } from 'apollo-link-ws';
 import { RetryLink } from 'apollo-link-retry';
@@ -70,10 +70,10 @@ const cache = new InMemoryCache({
   // }),
 });
 
-persistCache({
-  cache,
-  storage: localForage,
-});
+// persistCache({
+//   cache,
+//   storage: localForage,
+// });
 
 const client = new ApolloClient({
   link,

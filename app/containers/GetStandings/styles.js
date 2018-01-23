@@ -4,7 +4,7 @@ import Table from '../../components/Table';
 
 const Wrapper = styled(Table)`
   font-size: .975rem;
-  letter-spacing: 0.01rem;
+  letter-spacing: 0;
   margin: 0 auto;
   max-width: 1240px;
   width: 100%;
@@ -36,6 +36,7 @@ const Wrapper = styled(Table)`
     }
 
     &.club {
+      font-weight: 500;
       position: relative;
       text-align: left;
       width: 25%!important;

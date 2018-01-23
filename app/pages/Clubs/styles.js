@@ -5,7 +5,7 @@ const Wrapper = styled.div`
 `;
 
 const Masthead = styled.div`
-  background-color: #38003c;
+  background-color: ${(props) => props.theme.palette.brandPrimary};
   height: 140px;
   width: 100%;
 

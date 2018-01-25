@@ -8,10 +8,6 @@ class Table extends Component {
   render() {
     const { columns, data, ...rest } = this.props;
 
-    if (!data) {
-      return null;
-    }
-
     const head = columns.map((column, idx) => {
       const colHeader = typeof (column.Header) === 'function'
         ? column.Header()
@@ -26,32 +22,36 @@ class Table extends Component {
       );
     });
 
-    const body = data.map((_, i) => {
-      let accessor;
+    let body = null;
 
-      const item = data[i];
+    if (data) {
+      body = data.map((_, i) => {
+        let accessor;
 
-      return item && (
-        // eslint-disable-next-line react/no-array-index-key
-        <tr className="rt-tr" key={`r-${i}`}>
-          {
-            columns.map((column) => {
-              const classes = column.className ? ` ${column.className}` : '';
+        const item = data[i];
 
-              if (typeof (column.accessor) === 'function') {
-                accessor = column.accessor(item);
-              } else {
-                accessor = item[column.accessor];
-              }
+        return item && (
+          // eslint-disable-next-line react/no-array-index-key
+          <tr className="rt-tr" key={`r-${i}`}>
+            {
+              columns.map((column) => {
+                const classes = column.className ? ` ${column.className}` : '';
 
-              return accessor && (
-                <td className={`rt-td${classes}`} key={column.accessor}>{accessor}</td>
-              );
-            })
-          }
-        </tr>
-      );
-    });
+                if (typeof (column.accessor) === 'function') {
+                  accessor = column.accessor(item);
+                } else {
+                  accessor = item[column.accessor];
+                }
+
+                return accessor && (
+                  <td className={`rt-td${classes}`} key={column.accessor}>{accessor}</td>
+                );
+              })
+            }
+          </tr>
+        );
+      });
+    }
 
     return (
       <Wrapper {...rest}>

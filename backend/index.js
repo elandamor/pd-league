@@ -1,5 +1,6 @@
 import express from 'express';
-import { graphqlExpress, graphiqlExpress } from 'apollo-server-express';
+import { graphqlExpress } from 'apollo-server-express';
+import expressPlayground from 'graphql-playground-middleware-express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import kill from 'kill-port';
@@ -49,8 +50,8 @@ server.use('/graphql', bodyParser.json(), graphqlExpress(async (request) => {
   };
 }));
 
-server.use('/graphiql', graphiqlExpress({
-  endpointURL: '/graphql',
+server.use('/graphiql', expressPlayground({
+  endpoint: '/graphql',
   query: `# Welcome to the pdLeague GraphiQL
 
 query getStandings {

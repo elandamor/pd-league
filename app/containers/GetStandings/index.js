@@ -16,7 +16,11 @@ import getStandingsGQL from '../../graphql/queries/getStandings.gql';
 // Styled-Components
 import Table from './styles';
 
-const GetStandings = ({ standings }) => {
+const GetStandings = ({ onLoad, standings }) => {
+  if (standings) {
+    onLoad();
+  }
+
   const columns = [{
     id: 'position',
     className: 'position',
@@ -139,6 +143,7 @@ const GetStandings = ({ standings }) => {
 };
 
 GetStandings.propTypes = {
+  onLoad: PropTypes.func,
   standings: PropTypes.array,
 };
 

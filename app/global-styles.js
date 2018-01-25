@@ -23,6 +23,7 @@ injectGlobal`
   * {
     -webkit-tap-highlight-color: transparent;
     box-sizing: border-box;
+    /* outline: thin solid red; */
   }
 
   *::-webkit-scrollbar {

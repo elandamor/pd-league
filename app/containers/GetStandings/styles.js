@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import Table from '../../components/Table';
 
 const Wrapper = styled(Table)`
+  font-size: calc(1vw + 1vh + .5vmin);
   font-size: .975rem;
-  ${'' /* font-size: calc(1vw + 1vh + .5vmin); */}
   letter-spacing: 0;
   margin: 0 auto;
   max-width: 1240px;

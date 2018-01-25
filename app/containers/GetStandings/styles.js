@@ -4,6 +4,7 @@ import Table from '../../components/Table';
 
 const Wrapper = styled(Table)`
   font-size: .975rem;
+  ${'' /* font-size: calc(1vw + 1vh + .5vmin); */}
   letter-spacing: 0;
   margin: 0 auto;
   max-width: 1240px;
@@ -67,8 +68,11 @@ const Wrapper = styled(Table)`
   }
 
   .rt-tbody {
+    border: thin solid #e8e8e8;
+
     .rt-tr {
       border-bottom: thin solid #e8e8e8;
+      min-height: 45px;
 
       &:nth-child(-n+4) {
         background-color: #eee;
@@ -92,28 +96,32 @@ const Wrapper = styled(Table)`
     background-color: #adadad;
     border-radius: 100%;
     display: inline-block;
-    margin: 0 4px;
+    margin-left: 8px;
     height: 8px;
     width: 8px;
-  }
 
-  .a-movement.-up {
-    background-color: transparent;
-    border-bottom: 6px solid #13cf00;
-    border-left: 6px solid transparent;
-    border-radius: 0;
-    border-right: 6px solid transparent;
-    margin: -3px -2px 0 0;
-  }
+    &.-up,
+    &.-down {
+      background-color: transparent;
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      border-style: solid;
+      width: 0;
+      height: 0;
+      border-color: transparent;
+      border-radius: 0;
+    }
 
-  .a-movement.-down {
-    background-color: transparent;
-    border-left: 6px solid transparent;
-    border-radius: 0;
-    border-right: 6px solid transparent;
-    border-top: 6px solid #e90052;
-    margin-top: -3px;
-    margin-right: -2px;
+    &.-up {
+      border-width: 0 5px 5px;
+      border-bottom-color: #13cf00;
+    }
+
+    &.-down {
+      border-width: 5px 5px 0;
+      border-top-color: #e90052;
+    }
   }
 
   .c-badge {

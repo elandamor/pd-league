@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.main`
+  padding-bottom: 50%;
 
+  &.-loaded {
+    padding-bottom: 0;
+  }
 `;
 
 const Masthead = styled.div`
@@ -130,10 +134,20 @@ const Dropdown = styled.div`
   }
 `;
 
+const Placeholder = styled.div`
+  background-color: red;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+`;
+
 export default Wrapper;
 
 export {
   Dropdown,
   Masthead,
   Filters,
+  Placeholder,
 };

@@ -10,3 +10,4 @@ npm-debug.log
 .idea
 
 *.log
+backend/yarn.lock

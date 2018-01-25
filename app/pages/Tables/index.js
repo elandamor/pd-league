@@ -15,9 +15,25 @@ import Wrapper, { Masthead, Dropdown, Filters } from './styles';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class Tables extends React.Component {
+  constructor() {
+    super();
+
+    this.state = {
+      hasLoaded: false,
+    };
+  }
+
+  onLoad = () => {
+    this.setState({
+      hasLoaded: true,
+    });
+  }
+
   render() {
+    const { hasLoaded } = this.state;
+
     return (
-      <Wrapper>
+      <Wrapper className={hasLoaded ? '-loaded' : ''}>
         <Helmet>
           <title>Premier League Table, Form Guide & Season Archives</title>
           <meta name="description" content="View the latest Premier League tables, form guides and season archives, on the official website of the Zimbabwe Premier League." />
@@ -186,7 +202,7 @@ class Tables extends React.Component {
             Reset Filters <Icon icon={ICONS.RESET} />
           </button>
         </Filters>
-        <GetStandings />
+        <GetStandings onLoad={this.onLoad} />
       </Wrapper>
     );
   }

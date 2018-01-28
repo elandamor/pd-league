@@ -4,7 +4,7 @@ import { clubs, standings, users } from './data';
 
 const resolvers = {
   Query: {
-    clubs: () => _.sortBy(clubs, ['abbr']),
+    clubs: () => clubs,
     club: (obj, { abbr }) => find(clubs, { abbr }),
     standings: () => _.sortBy(standings, ['position.current']),
     users: () => users,

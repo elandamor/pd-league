@@ -1,0 +1,6 @@
+fragment player on Player {
+  avatar
+  name
+  number
+  position
+}

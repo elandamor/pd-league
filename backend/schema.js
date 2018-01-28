@@ -67,7 +67,7 @@ const typeDefs = `
 
   # the schema allows the following query:
   type Query {
-    club(key: String): Club
+    club(abbr: String): Club
     clubs: [Club]
     currentUser: User
     standings: [Statistics]

@@ -1,0 +1,12 @@
+#import "../fragments/player.gql"
+
+query getClubByAbbr($abbr: String) {
+  club(abbr: $abbr) {
+    id
+    name
+    website
+    squad {
+      ...player
+    }
+  }
+}

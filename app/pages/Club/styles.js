@@ -111,6 +111,7 @@ const Masthead = styled.div`
     z-index: 0;
     background-size: cover;
     background-position: 50%;
+    visibility: hidden;
 
     ${'' /* &::before {
       background-color: #e8e8e8;

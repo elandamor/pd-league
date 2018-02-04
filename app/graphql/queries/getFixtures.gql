@@ -1,0 +1,18 @@
+#import "../fragments/club.gql"
+
+query getFixtures {
+  fixtures {
+    matchDate
+    matchList {
+      ground {
+        city
+        name
+      }
+      kickoff
+      teams {
+        ...club
+      }
+    }
+  }
+}
+

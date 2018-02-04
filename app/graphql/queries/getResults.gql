@@ -1,0 +1,20 @@
+#import "../fragments/club.gql"
+
+query getResults {
+  results {
+    matchDate
+    matchList {
+      ground {
+        city
+        name
+      }
+      teams {
+        ...club
+      }
+      score {
+        count
+      }
+    }
+  }
+}
+

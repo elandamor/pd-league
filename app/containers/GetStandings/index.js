@@ -129,7 +129,7 @@ const GetStandings = ({ onLoad, standings }) => {
     Header: 'Next',
     accessor: ({ nextMatch }) => ( // eslint-disable-line react/prop-types
       <div className="nextMatch" role="tooltip">
-        <Avatar src={nextMatch.against.badge} />
+        <Avatar src={nextMatch.against && nextMatch.against.badge} />
       </div>
     ),
   }];

@@ -2,4 +2,5 @@ fragment club on Club {
   abbr
   badge
   name
+  shortName
 }

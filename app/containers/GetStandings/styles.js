@@ -129,7 +129,7 @@ const Wrapper = styled(Table)`
     height: 30px;
     line-height: 30px;
     text-align: center;
-    background: #adadad;
+    background: #e8e8e8;
     color: #fff;
     margin-right: 5px;
     border-radius: 100%;
@@ -193,7 +193,7 @@ const Wrapper = styled(Table)`
     height: 30px;
     line-height: 30px;
     text-align: center;
-    background: #adadad;
+    background: #e8e8e8;
     color: #fff;
     margin-right: 5px;
     border-radius: 100%;

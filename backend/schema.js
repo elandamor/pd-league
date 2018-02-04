@@ -70,6 +70,7 @@ const typeDefs = `
     club(abbr: String): Club
     clubs: [Club]
     currentUser: User
+    fixtures: [Fixture]
     standings: [Statistics]
     user(id: ID!): User
     users: [User]

@@ -3,6 +3,7 @@
 query getClubByAbbr($abbr: String) {
   club(abbr: $abbr) {
     id
+    badge
     name
     website
     squad {

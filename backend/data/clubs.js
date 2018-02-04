@@ -1,7 +1,7 @@
 const clubs = [
   {
     abbr: 'ARS',
-    badge: '',
+    badge: 'http://cdn.mashup-web.com/img/categories/arsenal-fc.png',
     name: 'Arsenal',
     website: 'www.arsenal.com',
     stadium: 'Emirates Stadium',
@@ -231,7 +231,7 @@ const clubs = [
     ],
   }, {
     abbr: 'BOU',
-    badge: '',
+    badge: 'https://idreamleaguesoccerkits.com/wp-content/uploads/2018/01/afc-bournemouth-logo-url-512x512-300x300.png',
     name: 'AFC Bournemouth',
     website: 'www.afcb.co.uk',
     stadium: 'Vitality Stadium',
@@ -431,7 +431,7 @@ const clubs = [
     ],
   }, {
     abbr: 'BHA',
-    badge: '',
+    badge: 'https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Brighton_%26_Hove_Albion_logo.svg/1200px-Brighton_%26_Hove_Albion_logo.svg.png',
     name: 'Brighton and Hove Albion',
     website: 'www.brightonandhovealbion.com',
     stadium: 'Amex Stadium',
@@ -625,7 +625,7 @@ const clubs = [
     ],
   }, {
     abbr: 'BUR',
-    badge: '',
+    badge: 'https://upload.wikimedia.org/wikipedia/en/0/02/Burnley_FC_badge.png',
     name: 'Burnley',
     website: 'www.burnleyfootball.com',
     stadium: 'Turf Moor',
@@ -801,7 +801,7 @@ const clubs = [
     ],
   }, {
     abbr: 'CHE',
-    badge: '',
+    badge: 'https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Chelsea_FC.svg/1200px-Chelsea_FC.svg.png',
     name: 'Chelsea',
     website: 'www.chelseafc.com',
     stadium: 'Stamford Bridge',
@@ -971,7 +971,7 @@ const clubs = [
     ],
   }, {
     abbr: 'CRY',
-    badge: '',
+    badge: 'https://pbs.twimg.com/profile_images/936184543937286145/f0A7HSzI_400x400.jpg',
     name: 'Crystal Palace',
     website: 'www.cpfc.co.uk',
     stadium: 'Selhurst Park',

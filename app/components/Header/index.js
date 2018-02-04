@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 // Styled-Components
-import Wrapper, { Title } from './styles';
+import Wrapper from './styles';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class Header extends Component {
@@ -10,7 +10,6 @@ class Header extends Component {
 
     return (
       <Wrapper {...props}>
-        <Title>{title}</Title>
         {this.props.children}
       </Wrapper>
     );

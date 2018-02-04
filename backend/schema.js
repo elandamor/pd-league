@@ -22,6 +22,7 @@ const typeDefs = `
     key: String
     name: String
     abbr: String
+    shortName: String
     website: String
     squad: [Player]
     stadium: String
@@ -57,12 +58,29 @@ const typeDefs = `
     difference: Int
   }
 
+  type Score {
+    count: Int
+  }
+
+  type Ground {
+    id: ID
+    city: String
+    name: String
+  }
+
   type Fixture {
     id: ID
+    ground: Ground
     kickoff: String
-    home: Boolean
-    against: Club
+    matchDate: String
+    teams: [Club]
+    score: [Score]
     result: String
+  }
+
+  type Match {
+    matchDate: String
+    matchList: [Fixture]
   }
 
   # the schema allows the following query:
@@ -70,7 +88,8 @@ const typeDefs = `
     club(abbr: String): Club
     clubs: [Club]
     currentUser: User
-    fixtures: [Fixture]
+    fixtures: [Match]
+    results: [Match]
     standings: [Statistics]
     user(id: ID!): User
     users: [User]

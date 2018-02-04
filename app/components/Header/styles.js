@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.header`
-  align-items: center;
+  ${'' /* align-items: center;
   background-color: ${(props) => props.theme.palette.brandPrimary};
   display: flex;
   height: 64px;
@@ -11,7 +11,7 @@ const Wrapper = styled.header`
   @media (min-width: 648px) {
     height: 88px;
     padding-left: 88px;
-  }
+  } */}
 `;
 
 const Title = styled.h1`

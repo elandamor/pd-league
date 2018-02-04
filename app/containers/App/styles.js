@@ -5,15 +5,6 @@ const Container = styled.div`
     position: sticky;
     align-items: center;
     background-color: ${(props) => props.theme.palette.brandPrimary};
-    ${'' /* display: flex;
-    height: 64px;
-    padding-left: 64px;
-    width: 100%;
-
-    @media (min-width: 648px) {
-      height: 88px;
-      padding-left: 88px;
-    } */}
     top: 0;
     z-index: 5;
   }
@@ -45,7 +36,7 @@ const Container = styled.div`
           a {
             color: #76766f;
             font-size: 13px;
-            font-weight: 400;
+            font-weight: 500;
             padding: 0 20px;
             position: relative;
 

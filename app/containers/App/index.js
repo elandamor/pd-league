@@ -14,8 +14,10 @@ import Header from '../../components/Header';
 // Routes {Pages}
 import Account from '../../pages/Account/Loadable';
 import Clubs from '../../pages/Clubs/Loadable';
+import Fixtures from '../../pages/Fixtures/Loadable';
 import Home from '../../pages/Home/Loadable';
 import NotFound from '../../pages/NotFound/Loadable';
+import Results from '../../pages/Results/Loadable';
 import Tables from '../../pages/Tables/Loadable';
 // Queries
 // import getAuthenticatedUserGQL from '../../graphql/queries/getAuthenticatedUser.gql';
@@ -37,7 +39,7 @@ const themeDark = { // eslint-disable-line no-unused-vars
 const themeLight = { // eslint-disable-line no-unused-vars
   isDark: false,
   palette: {
-    brandPrimary: '#000000',
+    brandPrimary: '#38003c',
     bodyBackground: '#fafafa',
     cardBackground: '#ffffff',
     cardBorderColor: '#ededed',
@@ -189,13 +191,17 @@ class App extends React.Component {
                   <NavLink
                     activeClassName="-active"
                     to="/fantasy"
-                  />
+                  >
+                    Fantasy
+                  </NavLink>
                 </li>
                 <li role="menuitem">
                   <NavLink
                     activeClassName="-active"
                     to="/stats"
-                  />
+                  >
+                    Stats
+                  </NavLink>
                 </li>
               </ul>
             </nav>
@@ -203,8 +209,10 @@ class App extends React.Component {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/account" component={Account} />
-            <Route path="/tables" component={Tables} />
             <Route path="/clubs" component={Clubs} />
+            <Route path="/fixtures" component={Fixtures} />
+            <Route path="/results" component={Results} />
+            <Route path="/tables" component={Tables} />
             <Route component={NotFound} />
           </Switch>
           <Footer className="c-app-footer" />

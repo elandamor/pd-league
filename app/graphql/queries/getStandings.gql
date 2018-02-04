@@ -22,17 +22,10 @@ query getStandings {
     form {
       id
       kickoff
-      home
-      against {
-        ...club
-      }
       result
     }
     nextMatch {
       kickoff
-      against {
-        ...club
-      }
     }
   }
 }

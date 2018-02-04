@@ -9,41 +9,19 @@ const standings = [
       badge: '',
       name: 'Manchester City',
     },
-    played: '24',
-    won: '21',
-    drawn: '2',
+    played: '26',
+    won: '22',
+    drawn: '3',
     lost: '1',
     goals: {
-      for: '70',
-      against: '18',
-      difference: '+52',
+      for: '74',
+      against: '19',
+      difference: '+55',
     },
-    points: '65',
+    points: '69',
     form: [
       {
-        id: 692722,
-        kickoff: 'Wednesday 27 December 2017',
-        home: false,
-        against: {
-          abbr: 'NEW',
-          badge: '',
-          name: 'Newcastle United',
-        },
-        result: 'W',
-      },
-      {
-        id: 466847,
-        kickoff: 'Sunday 31 December 2018',
-        home: false,
-        against: {
-          abbr: 'CRY',
-          badge: '',
-          name: 'Crystal Palace',
-        },
-        result: 'D',
-      },
-      {
-        id: 962674,
+        id: 900723,
         kickoff: 'Tuesday 2 January 2018',
         home: true,
         against: {
@@ -54,7 +32,7 @@ const standings = [
         result: 'W',
       },
       {
-        id: 469424,
+        id: 959467,
         kickoff: 'Sunday 14 January 2018',
         home: false,
         against: {
@@ -65,7 +43,7 @@ const standings = [
         result: 'L',
       },
       {
-        id: 801955,
+        id: 169505,
         kickoff: 'Saturday 20 January 2018',
         home: true,
         against: {
@@ -75,15 +53,37 @@ const standings = [
         },
         result: 'W',
       },
+      {
+        id: 281109,
+        kickoff: 'Wednesday 31 January 2018',
+        home: true,
+        against: {
+          abbr: 'WBA',
+          badge: '',
+          name: 'West Bromwich Albion',
+        },
+        result: 'W',
+      },
+      {
+        id: 744230,
+        kickoff: 'Saturday 3 February 2018',
+        home: false,
+        against: {
+          abbr: 'BUR',
+          badge: '',
+          name: 'Burnley',
+        },
+        result: 'D',
+      },
     ],
     nextMatch: {
-      id: 727126,
-      kickoff: 'Wednesday 31 January 2018',
+      id: 63760,
+      kickoff: 'Saturday 10 February 2018',
       home: true,
       against: {
-        abbr: 'WBA',
+        abbr: 'LEI',
         badge: '',
-        name: 'West Bromwich Albion',
+        name: 'Leicester City',
       },
     },
   },
@@ -97,41 +97,19 @@ const standings = [
       badge: '',
       name: 'Manchester United',
     },
-    played: '24',
-    won: '16',
+    played: '26',
+    won: '17',
     drawn: '5',
-    lost: '3',
+    lost: '4',
     goals: {
-      for: '49',
-      against: '16',
+      for: '51',
+      against: '18',
       difference: '+33',
     },
-    points: '53',
+    points: '56',
     form: [
       {
-        id: 907926,
-        kickoff: 'Tuesday 26 December 2017',
-        home: true,
-        against: {
-          abbr: 'BUR',
-          badge: '',
-          name: 'Burnley',
-        },
-        result: 'D',
-      },
-      {
-        id: 82502,
-        kickoff: 'Saturday 30 December 2017',
-        home: true,
-        against: {
-          abbr: 'SOU',
-          badge: '',
-          name: 'Southampton',
-        },
-        result: 'D',
-      },
-      {
-        id: 792873,
+        id: 795645,
         kickoff: 'Monday 1 January 2018',
         home: false,
         against: {
@@ -142,7 +120,7 @@ const standings = [
         result: 'W',
       },
       {
-        id: 397515,
+        id: 570950,
         kickoff: 'Monday 15 January 2018',
         home: true,
         against: {
@@ -153,7 +131,7 @@ const standings = [
         result: 'W',
       },
       {
-        id: 338048,
+        id: 164144,
         kickoff: 'Saturday 20 January 2018',
         home: false,
         against: {
@@ -163,109 +141,43 @@ const standings = [
         },
         result: 'W',
       },
+      {
+        id: 57945,
+        kickoff: 'Wednesday 31 January 2018',
+        home: false,
+        against: {
+          abbr: 'TOT',
+          badge: '',
+          name: 'Tottenham Hotspur',
+        },
+        result: 'L',
+      },
+      {
+        id: 588708,
+        kickoff: 'Saturday 3 February 2018',
+        home: true,
+        against: {
+          abbr: 'HUD',
+          badge: '',
+          name: 'Huddersfield Town',
+        },
+        result: 'W',
+      },
     ],
     nextMatch: {
-      id: 512888,
-      kickoff: 'Wednesday 31 January 2018',
+      id: 529872,
+      kickoff: 'Sunday 11 February 2018',
       home: false,
       against: {
-        abbr: 'TOT',
+        abbr: 'NEW',
         badge: '',
-        name: 'Tottenham Hotspur',
+        name: 'Newcastle United',
       },
     },
   },
   {
     position: {
       current: 3,
-      previous: 4,
-    },
-    club: {
-      abbr: 'CHE',
-      badge: '',
-      name: 'Chelsea',
-    },
-    played: '24',
-    won: '15',
-    drawn: '5',
-    lost: '4',
-    goals: {
-      for: '45',
-      against: '16',
-      difference: '+29',
-    },
-    points: '50',
-    form: [
-      {
-        id: 374097,
-        kickoff: 'Tuesday 26 December 2017',
-        home: true,
-        against: {
-          abbr: 'BHA',
-          badge: '',
-          name: 'Brighton and Hove Albion',
-        },
-        result: 'W',
-      },
-      {
-        id: 903238,
-        kickoff: 'Saturday 30 December 2017',
-        home: true,
-        against: {
-          abbr: 'STK',
-          badge: '',
-          name: 'Stoke City',
-        },
-        result: 'W',
-      },
-      {
-        id: 880921,
-        kickoff: 'Wednesday 3 January 2018',
-        home: false,
-        against: {
-          abbr: 'ARS',
-          badge: '',
-          name: 'Arsenal',
-        },
-        result: 'D',
-      },
-      {
-        id: 671490,
-        kickoff: 'Saturday 13 January 2018',
-        home: true,
-        against: {
-          abbr: 'LEI',
-          badge: '',
-          name: 'Leicester City',
-        },
-        result: 'D',
-      },
-      {
-        id: 298015,
-        kickoff: 'Saturday 20 January 2018',
-        home: false,
-        against: {
-          abbr: 'BHA',
-          badge: '',
-          name: 'Brighton and Hove Albion',
-        },
-        result: 'W',
-      },
-    ],
-    nextMatch: {
-      id: 94758,
-      kickoff: 'Wednesday 31 January 2018',
-      home: true,
-      against: {
-        abbr: 'BOU',
-        badge: '',
-        name: 'Bournemouth',
-      },
-    },
-  },
-  {
-    position: {
-      current: 4,
       previous: 3,
     },
     club: {
@@ -273,30 +185,19 @@ const standings = [
       badge: '',
       name: 'Liverpool',
     },
-    played: '24',
-    won: '13',
+    played: '25',
+    won: '14',
     drawn: '8',
     lost: '3',
     goals: {
-      for: '54',
+      for: '57',
       against: '29',
-      difference: '+25',
+      difference: '+28',
     },
-    points: '47',
+    points: '50',
     form: [
       {
-        id: 363398,
-        kickoff: 'Tuesday 26 December 2017',
-        home: true,
-        against: {
-          abbr: 'SWA',
-          badge: '',
-          name: 'Swansea City',
-        },
-        result: 'W',
-      },
-      {
-        id: 481665,
+        id: 498762,
         kickoff: 'Saturday 30 December 2017',
         home: true,
         against: {
@@ -307,7 +208,7 @@ const standings = [
         result: 'W',
       },
       {
-        id: 206042,
+        id: 899548,
         kickoff: 'Monday 1 January 2018',
         home: false,
         against: {
@@ -318,7 +219,7 @@ const standings = [
         result: 'W',
       },
       {
-        id: 303548,
+        id: 655611,
         kickoff: 'Sunday 14 January 2018',
         home: true,
         against: {
@@ -329,7 +230,7 @@ const standings = [
         result: 'W',
       },
       {
-        id: 668941,
+        id: 634796,
         kickoff: 'Monday 22 January 2018',
         home: false,
         against: {
@@ -339,15 +240,114 @@ const standings = [
         },
         result: 'L',
       },
+      {
+        id: 171793,
+        kickoff: 'Tuesday 30 January 2018',
+        home: false,
+        against: {
+          abbr: 'HUD',
+          badge: '',
+          name: 'Huddersfield Town',
+        },
+        result: 'W',
+      },
     ],
     nextMatch: {
-      id: 427864,
-      kickoff: 'Tuesday 30 January 2018',
+      id: 91167,
+      kickoff: 'Sunday 04 February 2018',
+      home: true,
+      against: {
+        abbr: 'TOT',
+        badge: '',
+        name: 'Tottenham Hotspur',
+      },
+    },
+  },
+  {
+    position: {
+      current: 4,
+      previous: 4,
+    },
+    club: {
+      abbr: 'CHE',
+      badge: 'https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Chelsea_FC.svg/1200px-Chelsea_FC.svg.png',
+      name: 'Chelsea',
+    },
+    played: '25',
+    won: '15',
+    drawn: '5',
+    lost: '5',
+    goals: {
+      for: '45',
+      against: '19',
+      difference: '+26',
+    },
+    points: '50',
+    form: [
+      {
+        id: 954921,
+        kickoff: 'Saturday 30 December 2017',
+        home: true,
+        against: {
+          abbr: 'STK',
+          badge: '',
+          name: 'Stoke City',
+        },
+        result: 'W',
+      },
+      {
+        id: 636362,
+        kickoff: 'Wednesday 3 January 2018',
+        home: false,
+        against: {
+          abbr: 'ARS',
+          badge: '',
+          name: 'Arsenal',
+        },
+        result: 'D',
+      },
+      {
+        id: 560842,
+        kickoff: 'Saturday 13 January 2018',
+        home: true,
+        against: {
+          abbr: 'LEI',
+          badge: '',
+          name: 'Leicester City',
+        },
+        result: 'D',
+      },
+      {
+        id: 638418,
+        kickoff: 'Saturday 20 January 2018',
+        home: false,
+        against: {
+          abbr: 'BHA',
+          badge: '',
+          name: 'Brighton and Hove Albion',
+        },
+        result: 'W',
+      },
+      {
+        id: 913108,
+        kickoff: 'Wednesday 31 January 2018',
+        home: true,
+        against: {
+          abbr: 'BOU',
+          badge: '',
+          name: 'Bournemouth',
+        },
+        result: 'L',
+      },
+    ],
+    nextMatch: {
+      id: 773313,
+      kickoff: 'Monday 05 February 2018',
       home: false,
       against: {
-        abbr: 'HUD',
+        abbr: 'WAT',
         badge: '',
-        name: 'Huddersfield Town',
+        name: 'Watford',
       },
     },
   },
@@ -361,30 +361,19 @@ const standings = [
       badge: '',
       name: 'Tottenham Hotspur',
     },
-    played: '24',
-    won: '13',
+    played: '25',
+    won: '14',
     drawn: '6',
     lost: '5',
     goals: {
-      for: '47',
+      for: '49',
       against: '22',
-      difference: '+25',
+      difference: '+27',
     },
-    points: '45',
+    points: '48',
     form: [
       {
-        id: 466870,
-        kickoff: 'Tuesday 26 December 2017',
-        home: true,
-        against: {
-          abbr: 'SOU',
-          badge: '',
-          name: 'Southampton',
-        },
-        result: 'W',
-      },
-      {
-        id: 32504,
+        id: 206958,
         kickoff: 'Tuesday 2 January 2018',
         home: false,
         against: {
@@ -395,7 +384,7 @@ const standings = [
         result: 'W',
       },
       {
-        id: 210325,
+        id: 35844,
         kickoff: 'Thursday 4 January 2018',
         home: true,
         against: {
@@ -406,7 +395,7 @@ const standings = [
         result: 'D',
       },
       {
-        id: 860781,
+        id: 122037,
         kickoff: 'Saturday 13 January 2018',
         home: true,
         against: {
@@ -417,7 +406,7 @@ const standings = [
         result: 'W',
       },
       {
-        id: 171693,
+        id: 506,
         kickoff: 'Sunday 21 January 2018',
         home: false,
         against: {
@@ -427,15 +416,26 @@ const standings = [
         },
         result: 'D',
       },
+      {
+        id: 632613,
+        kickoff: 'Wednesday 31 January 2018',
+        home: true,
+        against: {
+          abbr: 'MUN',
+          badge: '',
+          name: 'Manchester United',
+        },
+        result: 'W',
+      },
     ],
     nextMatch: {
-      id: 837822,
-      kickoff: 'Wednesday 31 January 2018',
-      home: true,
+      id: 110581,
+      kickoff: 'Sunday 04 February 2018',
+      home: false,
       against: {
-        abbr: 'MUN',
+        abbr: 'LIV',
         badge: '',
-        name: 'Manchester United',
+        name: 'Liverpool',
       },
     },
   },
@@ -449,41 +449,19 @@ const standings = [
       badge: '',
       name: 'Arsenal',
     },
-    played: '24',
-    won: '12',
+    played: '26',
+    won: '13',
     drawn: '6',
-    lost: '6',
+    lost: '7',
     goals: {
-      for: '45',
-      against: '31',
-      difference: '+14',
+      for: '51',
+      against: '35',
+      difference: '+16',
     },
-    points: '42',
+    points: '45',
     form: [
       {
-        id: 559835,
-        kickoff: 'Thursday 28 December 2017',
-        home: false,
-        against: {
-          abbr: 'CRY',
-          badge: '',
-          name: 'Crystal Palace',
-        },
-        result: 'W',
-      },
-      {
-        id: 749781,
-        kickoff: 'Sunday 31 December 2018',
-        home: false,
-        against: {
-          abbr: 'WBA',
-          badge: '',
-          name: 'West Bromwich Albion',
-        },
-        result: 'D',
-      },
-      {
-        id: 640910,
+        id: 161482,
         kickoff: 'Wednesday 3 January 2018',
         home: true,
         against: {
@@ -494,7 +472,7 @@ const standings = [
         result: 'D',
       },
       {
-        id: 235360,
+        id: 50175,
         kickoff: 'Sunday 14 January 2018',
         home: false,
         against: {
@@ -505,7 +483,7 @@ const standings = [
         result: 'L',
       },
       {
-        id: 793415,
+        id: 661043,
         kickoff: 'Saturday 20 January 2018',
         home: true,
         against: {
@@ -515,10 +493,120 @@ const standings = [
         },
         result: 'W',
       },
+      {
+        id: 154706,
+        kickoff: 'Tuesday 30 January 2018',
+        home: false,
+        against: {
+          abbr: 'SWA',
+          badge: '',
+          name: 'Swansea City',
+        },
+        result: 'L',
+      },
+      {
+        id: 175380,
+        kickoff: 'Saturday 3 February 2018',
+        home: true,
+        against: {
+          abbr: 'EVE',
+          badge: '',
+          name: 'Everton',
+        },
+        result: 'W',
+      },
     ],
     nextMatch: {
-      id: 993030,
-      kickoff: 'Tuesday 30 January 2018',
+      id: 633575,
+      kickoff: 'Saturday 10 February 2018',
+      home: false,
+      against: {
+        abbr: 'TOT',
+        badge: '',
+        name: 'Tottenham Hotspur',
+      },
+    },
+  },
+  {
+    position: {
+      current: 7,
+      previous: 7,
+    },
+    club: {
+      abbr: 'BUR',
+      badge: '',
+      name: 'Burnley',
+    },
+    played: '26',
+    won: '9',
+    drawn: '9',
+    lost: '8',
+    goals: {
+      for: '21',
+      against: '23',
+      difference: '-2',
+    },
+    points: '36',
+    form: [
+      {
+        id: 520514,
+        kickoff: 'Monday 1 January 2018',
+        home: true,
+        against: {
+          abbr: 'LIV',
+          badge: '',
+          name: 'Liverpool',
+        },
+        result: 'L',
+      },
+      {
+        id: 541217,
+        kickoff: 'Saturday 13 January 2018',
+        home: false,
+        against: {
+          abbr: 'CRY',
+          badge: '',
+          name: 'Crystal Palace',
+        },
+        result: 'L',
+      },
+      {
+        id: 715917,
+        kickoff: 'Saturday 20 January 2018',
+        home: true,
+        against: {
+          abbr: 'MUN',
+          badge: '',
+          name: 'Manchester United',
+        },
+        result: 'L',
+      },
+      {
+        id: 818183,
+        kickoff: 'Wednesday 31 January 2018',
+        home: false,
+        against: {
+          abbr: 'NEW',
+          badge: '',
+          name: 'Newcastle United',
+        },
+        result: 'D',
+      },
+      {
+        id: 577178,
+        kickoff: 'Saturday 3 February 2018',
+        home: true,
+        against: {
+          abbr: 'MCI',
+          badge: '',
+          name: 'Manchester City',
+        },
+        result: 'D',
+      },
+    ],
+    nextMatch: {
+      id: 252857,
+      kickoff: 'Saturday 10 February 2018',
       home: false,
       against: {
         abbr: 'SWA',
@@ -529,7 +617,7 @@ const standings = [
   },
   {
     position: {
-      current: 7,
+      current: 8,
       previous: 8,
     },
     club: {
@@ -537,41 +625,19 @@ const standings = [
       badge: '',
       name: 'Leicester City',
     },
-    played: '24',
+    played: '26',
     won: '9',
-    drawn: '7',
-    lost: '8',
+    drawn: '8',
+    lost: '9',
     goals: {
-      for: '36',
-      against: '32',
-      difference: '+4',
+      for: '38',
+      against: '35',
+      difference: '+3',
     },
-    points: '34',
+    points: '35',
     form: [
       {
-        id: 150454,
-        kickoff: 'Tuesday 26 December 2017',
-        home: false,
-        against: {
-          abbr: 'WAT',
-          badge: '',
-          name: 'Watford',
-        },
-        result: 'L',
-      },
-      {
-        id: 21201,
-        kickoff: 'Saturday 30 December 2017',
-        home: false,
-        against: {
-          abbr: 'LIV',
-          badge: '',
-          name: 'Liverpool',
-        },
-        result: 'L',
-      },
-      {
-        id: 495088,
+        id: 127535,
         kickoff: 'Monday 1 January 2018',
         home: true,
         against: {
@@ -582,7 +648,7 @@ const standings = [
         result: 'W',
       },
       {
-        id: 489403,
+        id: 469958,
         kickoff: 'Saturday 13 January 2018',
         home: false,
         against: {
@@ -593,7 +659,7 @@ const standings = [
         result: 'D',
       },
       {
-        id: 251139,
+        id: 945171,
         kickoff: 'Saturday 20 January 2018',
         home: true,
         against: {
@@ -603,415 +669,63 @@ const standings = [
         },
         result: 'W',
       },
-    ],
-    nextMatch: {
-      id: 122813,
-      kickoff: 'Wednesday 31 January 2018',
-      home: false,
-      against: {
-        abbr: 'EVE',
-        badge: '',
-        name: 'Everton',
-      },
-    },
-  },
-  {
-    position: {
-      current: 8,
-      previous: 7,
-    },
-    club: {
-      abbr: 'BUR',
-      badge: '',
-      name: 'Burnley',
-    },
-    played: '24',
-    won: '9',
-    drawn: '7',
-    lost: '8',
-    goals: {
-      for: '19',
-      against: '21',
-      difference: '-2',
-    },
-    points: '34',
-    form: [
       {
-        id: 473327,
-        kickoff: 'Tuesday 26 December 2017',
+        id: 291826,
+        kickoff: 'Wednesday 31 January 2018',
         home: false,
         against: {
-          abbr: 'MUN',
+          abbr: 'EVE',
           badge: '',
-          name: 'Manchester United',
-        },
-        result: 'D',
-      },
-      {
-        id: 14902,
-        kickoff: 'Saturday 30 December 2017',
-        home: false,
-        against: {
-          abbr: 'HUD',
-          badge: '',
-          name: 'Huddersfield Town',
-        },
-        result: 'D',
-      },
-      {
-        id: 215745,
-        kickoff: 'Monday 1 January 2018',
-        home: true,
-        against: {
-          abbr: 'LIV',
-          badge: '',
-          name: 'Liverpool',
+          name: 'Everton',
         },
         result: 'L',
       },
       {
-        id: 146631,
-        kickoff: 'Saturday 13 January 2018',
-        home: false,
-        against: {
-          abbr: 'CRY',
-          badge: '',
-          name: 'Crystal Palace',
-        },
-        result: 'L',
-      },
-      {
-        id: 990621,
-        kickoff: 'Saturday 20 January 2018',
-        home: true,
-        against: {
-          abbr: 'MUN',
-          badge: '',
-          name: 'Manchester United',
-        },
-        result: 'L',
-      },
-    ],
-    nextMatch: {
-      id: 955312,
-      kickoff: 'Wednesday 31 January 2018',
-      home: false,
-      against: {
-        abbr: 'NEW',
-        badge: '',
-        name: 'Newcastle United',
-      },
-    },
-  },
-  {
-    position: {
-      current: 9,
-      previous: 9,
-    },
-    club: {
-      abbr: 'EVE',
-      badge: '',
-      name: 'Everton',
-    },
-    played: '24',
-    won: '7',
-    drawn: '7',
-    lost: '10',
-    goals: {
-      for: '26',
-      against: '39',
-      difference: '-13',
-    },
-    points: '28',
-    form: [
-      {
-        id: 987915,
-        kickoff: 'Tuesday 26 December 2017',
-        home: false,
-        against: {
-          abbr: 'WBA',
-          badge: '',
-          name: 'West Bromwich Albion',
-        },
-        result: 'D',
-      },
-      {
-        id: 702948,
-        kickoff: 'Saturday 30 December 2017',
-        home: false,
-        against: {
-          abbr: 'BOU',
-          badge: '',
-          name: 'Bournemouth',
-        },
-        result: 'L',
-      },
-      {
-        id: 123554,
-        kickoff: 'Monday 1 January 2018',
-        home: true,
-        against: {
-          abbr: 'MUN',
-          badge: '',
-          name: 'Manchester United',
-        },
-        result: 'L',
-      },
-      {
-        id: 309856,
-        kickoff: 'Saturday 13 January 2018',
-        home: false,
-        against: {
-          abbr: 'TOT',
-          badge: '',
-          name: 'Tottenham Hotspur',
-        },
-        result: 'L',
-      },
-      {
-        id: 632613,
-        kickoff: 'Saturday 20 January 2018',
-        home: true,
-        against: {
-          abbr: 'WBA',
-          badge: '',
-          name: 'West Bromwich Albion',
-        },
-        result: 'D',
-      },
-    ],
-    nextMatch: {
-      id: 524564,
-      kickoff: 'Wednesday 31 January 2018',
-      home: true,
-      against: {
-        abbr: 'LEI',
-        badge: '',
-        name: 'Leicester City',
-      },
-    },
-  },
-  {
-    position: {
-      current: 10,
-      previous: 10,
-    },
-    club: {
-      abbr: 'WAT',
-      badge: '',
-      name: 'Watford',
-    },
-    played: '24',
-    won: '7',
-    drawn: '5',
-    lost: '12',
-    goals: {
-      for: '33',
-      against: '44',
-      difference: '-11',
-    },
-    points: '26',
-    form: [
-      {
-        id: 631336,
-        kickoff: 'Tuesday 26 December 2017',
-        home: true,
-        against: {
-          abbr: 'LEI',
-          badge: '',
-          name: 'Leicester City',
-        },
-        result: 'W',
-      },
-      {
-        id: 955651,
-        kickoff: 'Saturday 30 December 2017',
+        id: 91279,
+        kickoff: 'Saturday 3 February 2018',
         home: true,
         against: {
           abbr: 'SWA',
           badge: '',
           name: 'Swansea City',
         },
-        result: 'L',
-      },
-      {
-        id: 537149,
-        kickoff: 'Tuesday 2 January 2018',
-        home: false,
-        against: {
-          abbr: 'MCI',
-          badge: '',
-          name: 'Manchester City',
-        },
-        result: 'L',
-      },
-      {
-        id: 457145,
-        kickoff: 'Saturday 13 January 2018',
-        home: true,
-        against: {
-          abbr: 'SOU',
-          badge: '',
-          name: 'Southampton',
-        },
         result: 'D',
-      },
-      {
-        id: 224171,
-        kickoff: 'Saturday 20 January 2018',
-        home: false,
-        against: {
-          abbr: 'LEI',
-          badge: '',
-          name: 'Leicester City',
-        },
-        result: 'L',
       },
     ],
     nextMatch: {
-      id: 826635,
-      kickoff: 'Wednesday 31 January 2018',
+      id: 44144,
+      kickoff: 'Saturday 10 February 2018',
       home: false,
       against: {
-        abbr: 'STK',
+        abbr: 'MCI',
         badge: '',
-        name: 'Stoke City',
+        name: 'Manchester City',
       },
     },
   },
   {
     position: {
-      current: 11,
-      previous: 11,
-    },
-    club: {
-      abbr: 'WHU',
-      badge: '',
-      name: 'West Ham United',
-    },
-    played: '24',
-    won: '6',
-    drawn: '8',
-    lost: '10',
-    goals: {
-      for: '30',
-      against: '42',
-      difference: '-12',
-    },
-    points: '26',
-    form: [
-      {
-        id: 818494,
-        kickoff: 'Tuesday 26 December 2017',
-        home: false,
-        against: {
-          abbr: 'BOU',
-          badge: '',
-          name: 'Bournemouth',
-        },
-        result: 'D',
-      },
-      {
-        id: 592301,
-        kickoff: 'Tuesday 2 January 2018',
-        home: true,
-        against: {
-          abbr: 'WBA',
-          badge: '',
-          name: 'West Bromwich Albion',
-        },
-        result: 'W',
-      },
-      {
-        id: 779124,
-        kickoff: 'Thursday 4 January 2018',
-        home: false,
-        against: {
-          abbr: 'TOT',
-          badge: '',
-          name: 'Tottenham Hotspur',
-        },
-        result: 'D',
-      },
-      {
-        id: 834507,
-        kickoff: 'Saturday 13 January 2018',
-        home: false,
-        against: {
-          abbr: 'HUD',
-          badge: '',
-          name: 'Huddersfield Town',
-        },
-        result: 'W',
-      },
-      {
-        id: 409415,
-        kickoff: 'Saturday 20 January 2018',
-        home: true,
-        against: {
-          abbr: 'BOU',
-          badge: '',
-          name: 'Bournemouth',
-        },
-        result: 'D',
-      },
-    ],
-    nextMatch: {
-      id: 69716,
-      kickoff: 'Tuesday 30 January 2018',
-      home: true,
-      against: {
-        abbr: 'CRY',
-        badge: '',
-        name: 'Crystal Palace',
-      },
-    },
-  },
-  {
-    position: {
-      current: 12,
-      previous: 13,
+      current: 9,
+      previous: 10,
     },
     club: {
       abbr: 'BOU',
       badge: '',
       name: 'Bournemouth',
     },
-    played: '24',
-    won: '6',
+    played: '26',
+    won: '8',
     drawn: '7',
     lost: '11',
     goals: {
-      for: '25',
-      against: '36',
-      difference: '-11',
+      for: '30',
+      against: '37',
+      difference: '-7',
     },
-    points: '25',
+    points: '31',
     form: [
       {
-        id: 498847,
-        kickoff: 'Tuesday 26 December 2017',
-        home: true,
-        against: {
-          abbr: 'WHU',
-          badge: '',
-          name: 'West Ham United',
-        },
-        result: 'D',
-      },
-      {
-        id: 300657,
-        kickoff: 'Saturday 30 December 2017',
-        home: true,
-        against: {
-          abbr: 'EVE',
-          badge: '',
-          name: 'Everton',
-        },
-        result: 'W',
-      },
-      {
-        id: 870866,
+        id: 455641,
         kickoff: 'Monday 1 January 2018',
         home: false,
         against: {
@@ -1022,7 +736,7 @@ const standings = [
         result: 'D',
       },
       {
-        id: 192557,
+        id: 989952,
         kickoff: 'Sunday 14 January 2018',
         home: true,
         against: {
@@ -1033,7 +747,7 @@ const standings = [
         result: 'W',
       },
       {
-        id: 253199,
+        id: 428942,
         kickoff: 'Saturday 20 January 2018',
         home: false,
         against: {
@@ -1043,152 +757,185 @@ const standings = [
         },
         result: 'D',
       },
-    ],
-    nextMatch: {
-      id: 993393,
-      kickoff: 'Wednesday 31 January 2018',
-      home: false,
-      against: {
-        abbr: 'CHE',
-        badge: '',
-        name: 'Chelsea',
-      },
-    },
-  },
-  {
-    position: {
-      current: 13,
-      previous: 12,
-    },
-    club: {
-      abbr: 'CRY',
-      badge: '',
-      name: 'Crystal Palace',
-    },
-    played: '24',
-    won: '6',
-    drawn: '7',
-    lost: '11',
-    goals: {
-      for: '22',
-      against: '37',
-      difference: '-15',
-    },
-    points: '25',
-    form: [
       {
-        id: 855212,
-        kickoff: 'Thursday 28 December 2017',
-        home: true,
-        against: {
-          abbr: 'ARS',
-          badge: '',
-          name: 'Arsenal',
-        },
-        result: 'L',
-      },
-      {
-        id: 618173,
-        kickoff: 'Sunday 31 December 2018',
-        home: true,
-        against: {
-          abbr: 'MCI',
-          badge: '',
-          name: 'Manchester City',
-        },
-        result: 'D',
-      },
-      {
-        id: 391959,
-        kickoff: 'Tuesday 2 January 2018',
+        id: 344876,
+        kickoff: 'Wednesday 31 January 2018',
         home: false,
         against: {
-          abbr: 'SOU',
+          abbr: 'CHE',
           badge: '',
-          name: 'Southampton',
+          name: 'Chelsea',
         },
         result: 'W',
       },
       {
-        id: 41984,
-        kickoff: 'Saturday 13 January 2018',
-        home: true,
-        against: {
-          abbr: 'BUR',
-          badge: '',
-          name: 'Burnley',
-        },
-        result: 'W',
-      },
-      {
-        id: 715790,
-        kickoff: 'Saturday 20 January 2018',
-        home: false,
-        against: {
-          abbr: 'ARS',
-          badge: '',
-          name: 'Arsenal',
-        },
-        result: 'L',
-      },
-    ],
-    nextMatch: {
-      id: 834522,
-      kickoff: 'Tuesday 30 January 2018',
-      home: false,
-      against: {
-        abbr: 'WHU',
-        badge: '',
-        name: 'West Ham United',
-      },
-    },
-  },
-  {
-    position: {
-      current: 14,
-      previous: 14,
-    },
-    club: {
-      abbr: 'HUD',
-      badge: '',
-      name: 'Huddersfield Town',
-    },
-    played: '24',
-    won: '6',
-    drawn: '6',
-    lost: '12',
-    goals: {
-      for: '19',
-      against: '41',
-      difference: '-22',
-    },
-    points: '24',
-    form: [
-      {
-        id: 664962,
-        kickoff: 'Tuesday 26 December 2017',
+        id: 853586,
+        kickoff: 'Saturday 3 February 2018',
         home: true,
         against: {
           abbr: 'STK',
           badge: '',
           name: 'Stoke City',
         },
-        result: 'D',
+        result: 'W',
       },
+    ],
+    nextMatch: {
+      id: 177541,
+      kickoff: 'Sunday 11 February 2018',
+      home: false,
+      against: {
+        abbr: 'HUD',
+        badge: '',
+        name: 'Huddersfield Town',
+      },
+    },
+  },
+  {
+    position: {
+      current: 10,
+      previous: 9,
+    },
+    club: {
+      abbr: 'EVE',
+      badge: '',
+      name: 'Everton',
+    },
+    played: '26',
+    won: '8',
+    drawn: '7',
+    lost: '11',
+    goals: {
+      for: '29',
+      against: '45',
+      difference: '-16',
+    },
+    points: '31',
+    form: [
       {
-        id: 947262,
-        kickoff: 'Saturday 30 December 2017',
+        id: 669693,
+        kickoff: 'Monday 1 January 2018',
         home: true,
         against: {
-          abbr: 'BUR',
+          abbr: 'MUN',
           badge: '',
-          name: 'Burnley',
+          name: 'Manchester United',
+        },
+        result: 'L',
+      },
+      {
+        id: 427811,
+        kickoff: 'Saturday 13 January 2018',
+        home: false,
+        against: {
+          abbr: 'TOT',
+          badge: '',
+          name: 'Tottenham Hotspur',
+        },
+        result: 'L',
+      },
+      {
+        id: 4148,
+        kickoff: 'Saturday 20 January 2018',
+        home: true,
+        against: {
+          abbr: 'WBA',
+          badge: '',
+          name: 'West Bromwich Albion',
         },
         result: 'D',
       },
       {
-        id: 599631,
-        kickoff: 'Monday 1 January 2018',
+        id: 512983,
+        kickoff: 'Wednesday 31 January 2018',
+        home: true,
+        against: {
+          abbr: 'LEI',
+          badge: '',
+          name: 'Leicester City',
+        },
+        result: 'W',
+      },
+      {
+        id: 595919,
+        kickoff: 'Saturday 3 February 2018',
+        home: false,
+        against: {
+          abbr: 'ARS',
+          badge: '',
+          name: 'Arsenal',
+        },
+        result: 'L',
+      },
+    ],
+    nextMatch: {
+      id: 845967,
+      kickoff: 'Saturday 10 February 2018',
+      home: true,
+      against: {
+        abbr: 'CRY',
+        badge: '',
+        name: 'Crystal Palace',
+      },
+    },
+  },
+  {
+    position: {
+      current: 11,
+      previous: 11,
+    },
+    club: {
+      abbr: 'WAT',
+      badge: '',
+      name: 'Watford',
+    },
+    played: '25',
+    won: '7',
+    drawn: '6',
+    lost: '12',
+    goals: {
+      for: '33',
+      against: '44',
+      difference: '-11',
+    },
+    points: '27',
+    form: [
+      {
+        id: 936689,
+        kickoff: 'Saturday 30 December 2017',
+        home: true,
+        against: {
+          abbr: 'SWA',
+          badge: '',
+          name: 'Swansea City',
+        },
+        result: 'L',
+      },
+      {
+        id: 17223,
+        kickoff: 'Tuesday 2 January 2018',
+        home: false,
+        against: {
+          abbr: 'MCI',
+          badge: '',
+          name: 'Manchester City',
+        },
+        result: 'L',
+      },
+      {
+        id: 121989,
+        kickoff: 'Saturday 13 January 2018',
+        home: true,
+        against: {
+          abbr: 'SOU',
+          badge: '',
+          name: 'Southampton',
+        },
+        result: 'D',
+      },
+      {
+        id: 309711,
+        kickoff: 'Saturday 20 January 2018',
         home: false,
         against: {
           abbr: 'LEI',
@@ -1198,31 +945,284 @@ const standings = [
         result: 'L',
       },
       {
-        id: 169852,
-        kickoff: 'Saturday 13 January 2018',
-        home: true,
-        against: {
-          abbr: 'WHU',
-          badge: '',
-          name: 'West Ham United',
-        },
-        result: 'L',
-      },
-      {
-        id: 320637,
-        kickoff: 'Saturday 20 January 2018',
+        id: 702133,
+        kickoff: 'Wednesday 31 January 2018',
         home: false,
         against: {
           abbr: 'STK',
           badge: '',
           name: 'Stoke City',
         },
+        result: 'D',
+      },
+    ],
+    nextMatch: {
+      id: 797272,
+      kickoff: 'Monday 05 February 2018',
+      home: true,
+      against: {
+        abbr: 'CHE',
+        badge: '',
+        name: 'Chelsea',
+      },
+    },
+  },
+  {
+    position: {
+      current: 12,
+      previous: 12,
+    },
+    club: {
+      abbr: 'WHU',
+      badge: '',
+      name: 'West Ham United',
+    },
+    played: '26',
+    won: '6',
+    drawn: '9',
+    lost: '11',
+    goals: {
+      for: '32',
+      against: '46',
+      difference: '-14',
+    },
+    points: '27',
+    form: [
+      {
+        id: 844384,
+        kickoff: 'Thursday 4 January 2018',
+        home: false,
+        against: {
+          abbr: 'TOT',
+          badge: '',
+          name: 'Tottenham Hotspur',
+        },
+        result: 'D',
+      },
+      {
+        id: 4267,
+        kickoff: 'Saturday 13 January 2018',
+        home: false,
+        against: {
+          abbr: 'HUD',
+          badge: '',
+          name: 'Huddersfield Town',
+        },
+        result: 'W',
+      },
+      {
+        id: 473863,
+        kickoff: 'Saturday 20 January 2018',
+        home: true,
+        against: {
+          abbr: 'BOU',
+          badge: '',
+          name: 'Bournemouth',
+        },
+        result: 'D',
+      },
+      {
+        id: 727082,
+        kickoff: 'Tuesday 30 January 2018',
+        home: true,
+        against: {
+          abbr: 'CRY',
+          badge: '',
+          name: 'Crystal Palace',
+        },
+        result: 'D',
+      },
+      {
+        id: 382953,
+        kickoff: 'Saturday 3 February 2018',
+        home: false,
+        against: {
+          abbr: 'BHA',
+          badge: '',
+          name: 'Brighton and Hove Albion',
+        },
         result: 'L',
       },
     ],
     nextMatch: {
-      id: 366796,
-      kickoff: 'Tuesday 30 January 2018',
+      id: 367045,
+      kickoff: 'Saturday 10 February 2018',
+      home: true,
+      against: {
+        abbr: 'WAT',
+        badge: '',
+        name: 'Watford',
+      },
+    },
+  },
+  {
+    position: {
+      current: 13,
+      previous: 15,
+    },
+    club: {
+      abbr: 'BHA',
+      badge: '',
+      name: 'Brighton and Hove Albion',
+    },
+    played: '26',
+    won: '6',
+    drawn: '9',
+    lost: '11',
+    goals: {
+      for: '21',
+      against: '35',
+      difference: '-14',
+    },
+    points: '27',
+    form: [
+      {
+        id: 576060,
+        kickoff: 'Monday 1 January 2018',
+        home: true,
+        against: {
+          abbr: 'BOU',
+          badge: '',
+          name: 'Bournemouth',
+        },
+        result: 'D',
+      },
+      {
+        id: 331486,
+        kickoff: 'Saturday 13 January 2018',
+        home: false,
+        against: {
+          abbr: 'WBA',
+          badge: '',
+          name: 'West Bromwich Albion',
+        },
+        result: 'L',
+      },
+      {
+        id: 29846,
+        kickoff: 'Saturday 20 January 2018',
+        home: true,
+        against: {
+          abbr: 'CHE',
+          badge: '',
+          name: 'Chelsea',
+        },
+        result: 'L',
+      },
+      {
+        id: 810955,
+        kickoff: 'Wednesday 31 January 2018',
+        home: false,
+        against: {
+          abbr: 'SOU',
+          badge: '',
+          name: 'Southampton',
+        },
+        result: 'D',
+      },
+      {
+        id: 799076,
+        kickoff: 'Saturday 3 February 2018',
+        home: true,
+        against: {
+          abbr: 'WHU',
+          badge: '',
+          name: 'West Ham United',
+        },
+        result: 'W',
+      },
+    ],
+    nextMatch: {
+      id: 787182,
+      kickoff: 'Saturday 10 February 2018',
+      home: false,
+      against: {
+        abbr: 'STK',
+        badge: '',
+        name: 'Stoke City',
+      },
+    },
+  },
+  {
+    position: {
+      current: 14,
+      previous: 18,
+    },
+    club: {
+      abbr: 'SOU',
+      badge: '',
+      name: 'Southampton',
+    },
+    played: '26',
+    won: '5',
+    drawn: '11',
+    lost: '10',
+    goals: {
+      for: '28',
+      against: '38',
+      difference: '-10',
+    },
+    points: '26',
+    form: [
+      {
+        id: 446425,
+        kickoff: 'Tuesday 2 January 2018',
+        home: true,
+        against: {
+          abbr: 'CRY',
+          badge: '',
+          name: 'Crystal Palace',
+        },
+        result: 'L',
+      },
+      {
+        id: 147020,
+        kickoff: 'Saturday 13 January 2018',
+        home: false,
+        against: {
+          abbr: 'WAT',
+          badge: '',
+          name: 'Watford',
+        },
+        result: 'D',
+      },
+      {
+        id: 540768,
+        kickoff: 'Sunday 21 January 2018',
+        home: true,
+        against: {
+          abbr: 'TOT',
+          badge: '',
+          name: 'Tottenham Hotspur',
+        },
+        result: 'D',
+      },
+      {
+        id: 287968,
+        kickoff: 'Wednesday 31 January 2018',
+        home: true,
+        against: {
+          abbr: 'BHA',
+          badge: '',
+          name: 'Brighton and Hove Albion',
+        },
+        result: 'D',
+      },
+      {
+        id: 867830,
+        kickoff: 'Saturday 3 February 2018',
+        home: false,
+        against: {
+          abbr: 'WBA',
+          badge: '',
+          name: 'West Bromwich Albion',
+        },
+        result: 'W',
+      },
+    ],
+    nextMatch: {
+      id: 308445,
+      kickoff: 'Sunday 11 February 2018',
       home: true,
       against: {
         abbr: 'LIV',
@@ -1234,37 +1234,114 @@ const standings = [
   {
     position: {
       current: 15,
-      previous: 15,
+      previous: 13,
     },
     club: {
-      abbr: 'NEW',
+      abbr: 'CRY',
       badge: '',
-      name: 'Newcastle United',
+      name: 'Crystal Palace',
     },
-    played: '24',
+    played: '25',
     won: '6',
-    drawn: '5',
-    lost: '13',
+    drawn: '8',
+    lost: '11',
     goals: {
-      for: '22',
-      against: '34',
-      difference: '-12',
+      for: '23',
+      against: '38',
+      difference: '-15',
     },
-    points: '23',
+    points: '26',
     form: [
       {
-        id: 47120,
-        kickoff: 'Wednesday 27 December 2017',
+        id: 118935,
+        kickoff: 'Sunday 31 December 2018',
         home: true,
         against: {
           abbr: 'MCI',
           badge: '',
           name: 'Manchester City',
         },
+        result: 'D',
+      },
+      {
+        id: 56434,
+        kickoff: 'Tuesday 2 January 2018',
+        home: false,
+        against: {
+          abbr: 'SOU',
+          badge: '',
+          name: 'Southampton',
+        },
+        result: 'W',
+      },
+      {
+        id: 867288,
+        kickoff: 'Saturday 13 January 2018',
+        home: true,
+        against: {
+          abbr: 'BUR',
+          badge: '',
+          name: 'Burnley',
+        },
+        result: 'W',
+      },
+      {
+        id: 781075,
+        kickoff: 'Saturday 20 January 2018',
+        home: false,
+        against: {
+          abbr: 'ARS',
+          badge: '',
+          name: 'Arsenal',
+        },
         result: 'L',
       },
       {
-        id: 923621,
+        id: 523311,
+        kickoff: 'Tuesday 30 January 2018',
+        home: false,
+        against: {
+          abbr: 'WHU',
+          badge: '',
+          name: 'West Ham United',
+        },
+        result: 'D',
+      },
+    ],
+    nextMatch: {
+      id: 238385,
+      kickoff: 'Sunday 04 February 2018',
+      home: true,
+      against: {
+        abbr: 'NEW',
+        badge: '',
+        name: 'Newcastle United',
+      },
+    },
+  },
+  {
+    position: {
+      current: 16,
+      previous: 14,
+    },
+    club: {
+      abbr: 'NEW',
+      badge: '',
+      name: 'Newcastle United',
+    },
+    played: '25',
+    won: '6',
+    drawn: '6',
+    lost: '13',
+    goals: {
+      for: '23',
+      against: '35',
+      difference: '-12',
+    },
+    points: '24',
+    form: [
+      {
+        id: 994457,
         kickoff: 'Saturday 30 December 2017',
         home: true,
         against: {
@@ -1275,7 +1352,7 @@ const standings = [
         result: 'D',
       },
       {
-        id: 903681,
+        id: 317676,
         kickoff: 'Monday 1 January 2018',
         home: false,
         against: {
@@ -1286,7 +1363,7 @@ const standings = [
         result: 'W',
       },
       {
-        id: 433103,
+        id: 292267,
         kickoff: 'Saturday 13 January 2018',
         home: true,
         against: {
@@ -1297,7 +1374,7 @@ const standings = [
         result: 'D',
       },
       {
-        id: 430693,
+        id: 505307,
         kickoff: 'Saturday 20 January 2018',
         home: false,
         against: {
@@ -1307,10 +1384,109 @@ const standings = [
         },
         result: 'L',
       },
+      {
+        id: 607243,
+        kickoff: 'Wednesday 31 January 2018',
+        home: true,
+        against: {
+          abbr: 'BUR',
+          badge: '',
+          name: 'Burnley',
+        },
+        result: 'D',
+      },
     ],
     nextMatch: {
-      id: 971321,
-      kickoff: 'Wednesday 31 January 2018',
+      id: 530278,
+      kickoff: 'Sunday 04 February 2018',
+      home: false,
+      against: {
+        abbr: 'CRY',
+        badge: '',
+        name: 'Crystal Palace',
+      },
+    },
+  },
+  {
+    position: {
+      current: 17,
+      previous: 19,
+    },
+    club: {
+      abbr: 'SWA',
+      badge: '',
+      name: 'Swansea City',
+    },
+    played: '26',
+    won: '6',
+    drawn: '6',
+    lost: '14',
+    goals: {
+      for: '19',
+      against: '37',
+      difference: '-18',
+    },
+    points: '24',
+    form: [
+      {
+        id: 657560,
+        kickoff: 'Tuesday 2 January 2018',
+        home: true,
+        against: {
+          abbr: 'TOT',
+          badge: '',
+          name: 'Tottenham Hotspur',
+        },
+        result: 'L',
+      },
+      {
+        id: 273306,
+        kickoff: 'Saturday 13 January 2018',
+        home: false,
+        against: {
+          abbr: 'NEW',
+          badge: '',
+          name: 'Newcastle United',
+        },
+        result: 'D',
+      },
+      {
+        id: 746333,
+        kickoff: 'Monday 22 January 2018',
+        home: true,
+        against: {
+          abbr: 'LIV',
+          badge: '',
+          name: 'Liverpool',
+        },
+        result: 'W',
+      },
+      {
+        id: 647485,
+        kickoff: 'Tuesday 30 January 2018',
+        home: true,
+        against: {
+          abbr: 'ARS',
+          badge: '',
+          name: 'Arsenal',
+        },
+        result: 'W',
+      },
+      {
+        id: 958447,
+        kickoff: 'Saturday 3 February 2018',
+        home: false,
+        against: {
+          abbr: 'LEI',
+          badge: '',
+          name: 'Leicester City',
+        },
+        result: 'D',
+      },
+    ],
+    nextMatch: {
+      id: 410260,
+      kickoff: 'Saturday 10 February 2018',
       home: true,
       against: {
         abbr: 'BUR',
@@ -1321,137 +1497,27 @@ const standings = [
   },
   {
     position: {
-      current: 16,
+      current: 18,
       previous: 16,
-    },
-    club: {
-      abbr: 'BHA',
-      badge: '',
-      name: 'Brighton and Hove Albion',
-    },
-    played: '24',
-    won: '5',
-    drawn: '8',
-    lost: '11',
-    goals: {
-      for: '17',
-      against: '33',
-      difference: '-16',
-    },
-    points: '23',
-    form: [
-      {
-        id: 756364,
-        kickoff: 'Tuesday 26 December 2017',
-        home: false,
-        against: {
-          abbr: 'CHE',
-          badge: '',
-          name: 'Chelsea',
-        },
-        result: 'L',
-      },
-      {
-        id: 140919,
-        kickoff: 'Saturday 30 December 2017',
-        home: false,
-        against: {
-          abbr: 'NEW',
-          badge: '',
-          name: 'Newcastle United',
-        },
-        result: 'D',
-      },
-      {
-        id: 697250,
-        kickoff: 'Monday 1 January 2018',
-        home: true,
-        against: {
-          abbr: 'BOU',
-          badge: '',
-          name: 'Bournemouth',
-        },
-        result: 'D',
-      },
-      {
-        id: 156849,
-        kickoff: 'Saturday 13 January 2018',
-        home: false,
-        against: {
-          abbr: 'WBA',
-          badge: '',
-          name: 'West Bromwich Albion',
-        },
-        result: 'L',
-      },
-      {
-        id: 390575,
-        kickoff: 'Saturday 20 January 2018',
-        home: true,
-        against: {
-          abbr: 'CHE',
-          badge: '',
-          name: 'Chelsea',
-        },
-        result: 'L',
-      },
-    ],
-    nextMatch: {
-      id: 792958,
-      kickoff: 'Wednesday 31 January 2018',
-      home: false,
-      against: {
-        abbr: 'SOU',
-        badge: '',
-        name: 'Southampton',
-      },
-    },
-  },
-  {
-    position: {
-      current: 17,
-      previous: 18,
     },
     club: {
       abbr: 'STK',
       badge: '',
       name: 'Stoke City',
     },
-    played: '24',
+    played: '26',
     won: '6',
-    drawn: '5',
-    lost: '13',
+    drawn: '6',
+    lost: '14',
     goals: {
-      for: '25',
-      against: '50',
-      difference: '-25',
+      for: '26',
+      against: '52',
+      difference: '-26',
     },
-    points: '23',
+    points: '24',
     form: [
       {
-        id: 723845,
-        kickoff: 'Tuesday 26 December 2017',
-        home: false,
-        against: {
-          abbr: 'HUD',
-          badge: '',
-          name: 'Huddersfield Town',
-        },
-        result: 'D',
-      },
-      {
-        id: 517896,
-        kickoff: 'Saturday 30 December 2017',
-        home: false,
-        against: {
-          abbr: 'CHE',
-          badge: '',
-          name: 'Chelsea',
-        },
-        result: 'L',
-      },
-      {
-        id: 273817,
+        id: 275928,
         kickoff: 'Monday 1 January 2018',
         home: true,
         against: {
@@ -1462,7 +1528,7 @@ const standings = [
         result: 'L',
       },
       {
-        id: 960239,
+        id: 377236,
         kickoff: 'Monday 15 January 2018',
         home: false,
         against: {
@@ -1473,7 +1539,7 @@ const standings = [
         result: 'L',
       },
       {
-        id: 586561,
+        id: 521442,
         kickoff: 'Saturday 20 January 2018',
         home: true,
         against: {
@@ -1483,76 +1549,10 @@ const standings = [
         },
         result: 'W',
       },
-    ],
-    nextMatch: {
-      id: 487097,
-      kickoff: 'Wednesday 31 January 2018',
-      home: true,
-      against: {
-        abbr: 'WAT',
-        badge: '',
-        name: 'Watford',
-      },
-    },
-  },
-  {
-    position: {
-      current: 18,
-      previous: 17,
-    },
-    club: {
-      abbr: 'SOU',
-      badge: '',
-      name: 'Southampton',
-    },
-    played: '24',
-    won: '4',
-    drawn: '10',
-    lost: '10',
-    goals: {
-      for: '24',
-      against: '35',
-      difference: '-11',
-    },
-    points: '22',
-    form: [
       {
-        id: 813069,
-        kickoff: 'Tuesday 26 December 2017',
-        home: false,
-        against: {
-          abbr: 'TOT',
-          badge: '',
-          name: 'Tottenham Hotspur',
-        },
-        result: 'L',
-      },
-      {
-        id: 362953,
-        kickoff: 'Saturday 30 December 2017',
-        home: false,
-        against: {
-          abbr: 'MUN',
-          badge: '',
-          name: 'Manchester United',
-        },
-        result: 'D',
-      },
-      {
-        id: 548870,
-        kickoff: 'Tuesday 2 January 2018',
+        id: 756598,
+        kickoff: 'Wednesday 31 January 2018',
         home: true,
-        against: {
-          abbr: 'CRY',
-          badge: '',
-          name: 'Crystal Palace',
-        },
-        result: 'L',
-      },
-      {
-        id: 124061,
-        kickoff: 'Saturday 13 January 2018',
-        home: false,
         against: {
           abbr: 'WAT',
           badge: '',
@@ -1561,20 +1561,20 @@ const standings = [
         result: 'D',
       },
       {
-        id: 773565,
-        kickoff: 'Sunday 21 January 2018',
-        home: true,
+        id: 838264,
+        kickoff: 'Saturday 3 February 2018',
+        home: false,
         against: {
-          abbr: 'TOT',
+          abbr: 'BOU',
           badge: '',
-          name: 'Tottenham Hotspur',
+          name: 'Bournemouth',
         },
-        result: 'D',
+        result: 'L',
       },
     ],
     nextMatch: {
-      id: 81850,
-      kickoff: 'Wednesday 31 January 2018',
+      id: 319359,
+      kickoff: 'Saturday 10 February 2018',
       home: true,
       against: {
         abbr: 'BHA',
@@ -1586,48 +1586,114 @@ const standings = [
   {
     position: {
       current: 19,
-      previous: 19,
+      previous: 17,
+    },
+    club: {
+      abbr: 'HUD',
+      badge: '',
+      name: 'Huddersfield Town',
+    },
+    played: '26',
+    won: '6',
+    drawn: '6',
+    lost: '14',
+    goals: {
+      for: '19',
+      against: '46',
+      difference: '-27',
+    },
+    points: '24',
+    form: [
+      {
+        id: 607393,
+        kickoff: 'Monday 1 January 2018',
+        home: false,
+        against: {
+          abbr: 'LEI',
+          badge: '',
+          name: 'Leicester City',
+        },
+        result: 'L',
+      },
+      {
+        id: 784530,
+        kickoff: 'Saturday 13 January 2018',
+        home: true,
+        against: {
+          abbr: 'WHU',
+          badge: '',
+          name: 'West Ham United',
+        },
+        result: 'L',
+      },
+      {
+        id: 664809,
+        kickoff: 'Saturday 20 January 2018',
+        home: false,
+        against: {
+          abbr: 'STK',
+          badge: '',
+          name: 'Stoke City',
+        },
+        result: 'L',
+      },
+      {
+        id: 347602,
+        kickoff: 'Tuesday 30 January 2018',
+        home: true,
+        against: {
+          abbr: 'LIV',
+          badge: '',
+          name: 'Liverpool',
+        },
+        result: 'L',
+      },
+      {
+        id: 825271,
+        kickoff: 'Saturday 3 February 2018',
+        home: false,
+        against: {
+          abbr: 'MUN',
+          badge: '',
+          name: 'Manchester United',
+        },
+        result: 'L',
+      },
+    ],
+    nextMatch: {
+      id: 548774,
+      kickoff: 'Sunday 11 February 2018',
+      home: true,
+      against: {
+        abbr: 'BOU',
+        badge: '',
+        name: 'Bournemouth',
+      },
+    },
+  },
+  {
+    position: {
+      current: 20,
+      previous: 20,
     },
     club: {
       abbr: 'WBA',
       badge: '',
       name: 'West Bromwich Albion',
     },
-    played: '24',
+    played: '26',
     won: '3',
     drawn: '11',
-    lost: '10',
+    lost: '12',
     goals: {
-      for: '19',
-      against: '31',
-      difference: '-12',
+      for: '21',
+      against: '37',
+      difference: '-16',
     },
     points: '20',
     form: [
       {
-        id: 863747,
-        kickoff: 'Tuesday 26 December 2017',
-        home: true,
-        against: {
-          abbr: 'EVE',
-          badge: '',
-          name: 'Everton',
-        },
-        result: 'D',
-      },
-      {
-        id: 281018,
-        kickoff: 'Sunday 31 December 2018',
-        home: true,
-        against: {
-          abbr: 'ARS',
-          badge: '',
-          name: 'Arsenal',
-        },
-        result: 'D',
-      },
-      {
-        id: 688539,
+        id: 796530,
         kickoff: 'Tuesday 2 January 2018',
         home: false,
         against: {
@@ -1638,7 +1704,7 @@ const standings = [
         result: 'L',
       },
       {
-        id: 299216,
+        id: 627267,
         kickoff: 'Saturday 13 January 2018',
         home: true,
         against: {
@@ -1649,7 +1715,7 @@ const standings = [
         result: 'W',
       },
       {
-        id: 27984,
+        id: 123865,
         kickoff: 'Saturday 20 January 2018',
         home: false,
         against: {
@@ -1659,103 +1725,37 @@ const standings = [
         },
         result: 'D',
       },
+      {
+        id: 280685,
+        kickoff: 'Wednesday 31 January 2018',
+        home: false,
+        against: {
+          abbr: 'MCI',
+          badge: '',
+          name: 'Manchester City',
+        },
+        result: 'L',
+      },
+      {
+        id: 926113,
+        kickoff: 'Saturday 3 February 2018',
+        home: true,
+        against: {
+          abbr: 'SOU',
+          badge: '',
+          name: 'Southampton',
+        },
+        result: 'L',
+      },
     ],
     nextMatch: {
-      id: 269991,
-      kickoff: 'Wednesday 31 January 2018',
+      id: 179808,
+      kickoff: 'Monday 12 February 2018',
       home: false,
       against: {
-        abbr: 'MCI',
+        abbr: 'CHE',
         badge: '',
-        name: 'Manchester City',
-      },
-    },
-  },
-  {
-    position: {
-      current: 20,
-      previous: 20,
-    },
-    club: {
-      abbr: 'SWA',
-      badge: '',
-      name: 'Swansea City',
-    },
-    played: '24',
-    won: '5',
-    drawn: '5',
-    lost: '14',
-    goals: {
-      for: '15',
-      against: '35',
-      difference: '-20',
-    },
-    points: '20',
-    form: [
-      {
-        id: 95909,
-        kickoff: 'Tuesday 26 December 2017',
-        home: false,
-        against: {
-          abbr: 'LIV',
-          badge: '',
-          name: 'Liverpool',
-        },
-        result: 'L',
-      },
-      {
-        id: 909441,
-        kickoff: 'Saturday 30 December 2017',
-        home: false,
-        against: {
-          abbr: 'WAT',
-          badge: '',
-          name: 'Watford',
-        },
-        result: 'W',
-      },
-      {
-        id: 207741,
-        kickoff: 'Tuesday 2 January 2018',
-        home: true,
-        against: {
-          abbr: 'TOT',
-          badge: '',
-          name: 'Tottenham Hotspur',
-        },
-        result: 'L',
-      },
-      {
-        id: 867767,
-        kickoff: 'Saturday 13 January 2018',
-        home: false,
-        against: {
-          abbr: 'NEW',
-          badge: '',
-          name: 'Newcastle United',
-        },
-        result: 'D',
-      },
-      {
-        id: 948468,
-        kickoff: 'Monday 22 January 2018',
-        home: true,
-        against: {
-          abbr: 'LIV',
-          badge: '',
-          name: 'Liverpool',
-        },
-        result: 'W',
-      },
-    ],
-    nextMatch: {
-      id: 931519,
-      kickoff: 'Tuesday 30 January 2018',
-      home: true,
-      against: {
-        abbr: 'ARS',
-        badge: '',
-        name: 'Arsenal',
+        name: 'Chelsea',
       },
     },
   },

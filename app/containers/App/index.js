@@ -3,7 +3,7 @@
  */
 
 import React from 'react';
-import { Switch, Route, withRouter } from 'react-router-dom';
+import { NavLink, Route, Switch, withRouter } from 'react-router-dom';
 import { compose } from 'react-apollo';
 import { ThemeProvider } from 'styled-components';
 import PropTypes from 'prop-types';
@@ -136,7 +136,70 @@ class App extends React.Component {
       <ThemeProvider theme={theme}>
         <Container className="app-container">
           <Bootstrap theme={theme} />
-          <Header className="c-app-header" />
+          <Header className="c-app-header">
+            <nav className="c-app-nav--main">
+              <ul role="menu">
+                <li aria-haspopup="true" role="menuitem">
+                  Premier League
+                  <ul className="-sub" role="menu">
+                    <li role="menuitem">
+                      <NavLink
+                        exact
+                        activeClassName="-active"
+                        to="/"
+                      >
+                        Home
+                      </NavLink>
+                    </li>
+                    <li role="menuitem">
+                      <NavLink
+                        activeClassName="-active"
+                        to="/fixtures"
+                      >
+                        Fixtures
+                      </NavLink>
+                    </li>
+                    <li role="menuitem">
+                      <NavLink
+                        activeClassName="-active"
+                        to="/results"
+                      >
+                        Results
+                      </NavLink>
+                    </li>
+                    <li role="menuitem">
+                      <NavLink
+                        activeClassName="-active"
+                        to="/tables"
+                      >
+                        Tables
+                      </NavLink>
+                    </li>
+                    <li role="menuitem">
+                      <NavLink
+                        activeClassName="-active"
+                        to="/clubs"
+                      >
+                        Clubs
+                      </NavLink>
+                    </li>
+                  </ul>
+                </li>
+                <li role="menuitem">
+                  <NavLink
+                    activeClassName="-active"
+                    to="/fantasy"
+                  />
+                </li>
+                <li role="menuitem">
+                  <NavLink
+                    activeClassName="-active"
+                    to="/stats"
+                  />
+                </li>
+              </ul>
+            </nav>
+          </Header>
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/account" component={Account} />

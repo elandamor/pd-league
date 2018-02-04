@@ -26,16 +26,38 @@ class GetClubByAbbr extends React.Component { // eslint-disable-line react/prefe
           <title>{`${club && club.name} News, Fixtures and Results - Premier League`}</title>
           <meta name="description" content={`For the latest news on ${club && club.name}, including scores, fixtures, results, form guide & league position, visit the official website of the Zimbabwe Premier League.`} />
         </Helmet>
-        <Masthead role="banner">
+        <Masthead className="-overview" role="banner">
           <div className="c-inner">
-            <h2 className="c-title">{club && club.name}</h2>
+            <div className="c-info-container">
+              <Avatar className="c-badge" src={club && club.badge} />
+              <div className="c-info">
+                <h2 className="c-title">{club && club.name}</h2>
+              </div>
+            </div>
+            <nav>
+              <ul>
+                <li>
+                  <NavLink activeClassName="-active" to={`${match.url}/overview`}>Overview</NavLink>
+                </li>
+                <li>
+                  <NavLink activeClassName="-active" to={`${match.url}/squad`}>Squad</NavLink>
+                </li>
+                <li>
+                  <NavLink activeClassName="-active" to={`${match.url}/fixtures`}>Fixtures</NavLink>
+                </li>
+                <li>
+                  <NavLink activeClassName="-active" to={`${match.url}/results`}>Results</NavLink>
+                </li>
+                <li>
+                  <NavLink activeClassName="-active" to={`${match.url}/stats`}>Stats</NavLink>
+                </li>
+                <li>
+                  <NavLink activeClassName="-active" to={`${match.url}/stadium`}>Stadium</NavLink>
+                </li>
+              </ul>
+            </nav>
           </div>
         </Masthead>
-        <nav>
-          <NavLink activeClassName="-active" to={`${match.url}/overview`}>Overview</NavLink>
-          <NavLink activeClassName="-active" to={`${match.url}/squad`}>Squad</NavLink>
-          <NavLink activeClassName="-active" to={`${match.url}/fixtures`}>Fixtures</NavLink>
-        </nav>
         <Switch>
           <Route
             exact

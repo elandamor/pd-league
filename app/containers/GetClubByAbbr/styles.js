@@ -1,27 +1,83 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-
+  background-color: #ffffff;
 `;
 
 const Masthead = styled.div`
   background-color: ${(props) => props.theme.palette.brandPrimary};
-  height: 140px;
   width: 100%;
 
+  position: relative;
+  margin-top: -20px;
+  padding: 40px 0 0;
+  background: #e8e8e8;
+  overflow: hidden;
+  color: #333;
+
   .c-inner {
-    align-items: center;
-    display: flex;
     height: 100%;
-    justify-content: space-between;
     margin: 0 auto;
     max-width: 1240px;
-    padding: 2rem 0;
+    padding: 20px 0 0;
     position: relative;
   }
 
+  .c-info-container {
+    align-items: center;
+    display: flex;
+  }
+
+  nav {
+    height: 40px;
+    margin-top: 40px;
+    width: 100%;
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        list-style-type: none;
+        margin-right: 5px;
+
+        a {
+          text-align: center;
+          padding: 0 30px;
+          text-decoration: none;
+          background: #adadad;
+          color: #333;
+          display: block;
+          transition: all .2s;
+          position: relative;
+          font-size: 12px;
+          cursor: pointer;
+          line-height: 40px;
+          border-radius: 2px 2px 0 0;
+
+          &.-active {
+            background-color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+
+  .c-badge {
+    background: #adadad;
+    border-radius: 100%;
+    display: inline-block;
+    height: 200px;
+    margin-right: 20px;
+    vertical-align: middle;
+    visibility: hidden;
+    width: 200px;
+  }
+
   .c-title {
-    color: #fff;
+    display: none;
+    color: #333;
     font-size: 2.85rem;
     margin: 0;
   }
@@ -40,12 +96,13 @@ const Masthead = styled.div`
 `;
 
 const Squad = styled.ul`
+  background-color: #ffffff;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
   margin: 0 auto;
   max-width: 1240px;
-  padding: 0;
+  padding: 15px 0;
   width: 100%;
 `;
 

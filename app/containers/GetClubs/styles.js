@@ -37,7 +37,13 @@ const Club = styled.li`
     margin-left: -35px;
     padding: 10px;
     border-radius: 100%;
-    background: #adadad;
+    background: #fff;
+
+    img {
+      height: auto;
+      width: 100%;
+      visibility: hidden;
+    }
   }
 
   .c-info {

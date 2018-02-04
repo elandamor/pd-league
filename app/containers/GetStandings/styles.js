@@ -137,6 +137,11 @@ const Wrapper = styled(Table)`
     vertical-align: middle;
     cursor: pointer;
     font-weight: 400;
+
+    img {
+      height: auto;
+      width: 100%;
+    }
   }
 
   .c-tooltip {
